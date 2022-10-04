@@ -1,0 +1,9 @@
+{
+    "markdown.extension.toc.omittedFromToc": {
+        // Use a path relative to your workspace.
+        "README.md": [
+            "# Awesome List",
+            "# Table of Contents",
+        ]
+      }
+}

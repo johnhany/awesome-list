@@ -3,6 +3,28 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 ---
 
+# Table of Contents
+
+- [Machine Learning](#machine-learning)
+  - [Deep Learning Framework](#deep-learning-framework)
+  - [Machine Learning Framework](#machine-learning-framework)
+  - [Computer Vision](#computer-vision)
+  - [Natural Language Processing](#natural-language-processing)
+  - [Reinforcement Learning](#reinforcement-learning)
+  - [Linear Algebra / Statistics Toolkit](#linear-algebra--statistics-toolkit)
+  - [Machine Learning Utilities](#machine-learning-utilities)
+  - [Machine Learning Tutorials](#machine-learning-tutorials)
+- [Full-Stack Development](#full-stack-development)
+  - [Data Management & Processing](#data-management--processing)
+- [Academic](#academic)
+  - [Mathematics](#mathematics)
+  - [Paper Reading](#paper-reading)
+- [Useful Tools](#useful-tools)
+  - [Mac](#mac)
+  - [Cross-Platform](#cross-platform)
+
+---
+
 # Machine Learning
 
 ## Deep Learning Framework
@@ -37,10 +59,6 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     * [tf_numpy](https://www.tensorflow.org/guide/tf_numpy) - A subset of the NumPy API implemented in TensorFlow
     </details>
 
-* [CNTK](https://github.com/microsoft/CNTK) - An open source deep learning framework by Microsoft, with GPU support.
-  * Supported platform: *Linux, Windows*
-  * Language API: *Python, C++, Java, C#, .Net*
-
 * [PaddlePaddle](https://github.com/PaddlePaddle/Paddle) - An open source deep learning framework by Baidu, with GPU support.
   * Supported platform: *Linux, Windows, MacOS, Android, iOS, Web*
   * Language API: *Python, C++, Java, JavaScript*
@@ -64,47 +82,110 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
   * Supported platform: *Linux, Windows, MacOS, Raspberry Pi*
   * Language API: *Python, C++, R, Julia, Scala, Go, Javascript*
 
-* [fastai](https://github.com/fastai/fastai) - A Python deep learning library based on PyTorch
-  * Supported platform: *Linux, Windows*
-
 * [MegEngine](https://github.com/MegEngine/MegEngine) - An open source deep learning framework by MEGVII, with GPU support.
   * Supported platform: *Linux, Windows, MacOS*
   * Language API: *Python, C++*
 
-* [Chainer](https://github.com/chainer/chainer) **(not actively updated)** - A flexible framework of neural networks for deep learning
+* [MACE](https://github.com/XiaoMi/mace) - A deep learning inference framework optimized for mobile heterogeneous computing by XiaoMi.
+  * Supported platform: *Android, iOS, Linux and Windows*
+
+* [Neural Network Libraries](https://github.com/sony/nnabla) - An open source deep learning framework by Sony, with GPU support.
+
+* [CNTK](https://github.com/microsoft/CNTK) **(not actively updated)** - An open source deep learning framework by Microsoft, with GPU support.
+  * Supported platform: *Linux, Windows*
+  * Language API: *Python, C++, Java, C#, .Net*
+
+* [DyNet](https://github.com/clab/dynet) **(not actively updated)** - A C++ deep learning library by CMU.
+  * Supported platform: *Linux, Windows, MacOS*
+  * Language API: *C++, Python*
+
+* [Chainer](https://github.com/chainer/chainer) **(not actively updated)** - A flexible framework of neural networks for deep learning.
+  
+* [fastai](https://github.com/fastai/fastai) - A high-level deep learning library based on PyTorch.
+
+* [Lightning](https://github.com/Lightning-AI/lightning) - A high-level deep learning library based on PyTorch.
+
+* [skorch](https://github.com/skorch-dev/skorch) **(not actively updated)** - A scikit-learn compatible neural network library based on PyTorch.
+
+* [ktrain](https://github.com/amaiya/ktrain) - A high-level deep learning library based on TensorFlow.
+
+* [Tensorpack](https://github.com/tensorpack/tensorpack) **(not actively updated)** - A high-level deep learning library based on TensorFlow.
+
+* [Sonnet](https://github.com/deepmind/sonnet) **(not actively updated)** - A high-level deep learning library based on TensorFlow.
+
+* [Thinc](https://github.com/explosion/thinc) - A high-level deep learning library for PyTorch, TensorFlow and MXNet.
+
+* [Ludwig](https://github.com/ludwig-ai/ludwig) - A declarative deep learning framework that allows users to train, evaluate, and deploy models without the need to write code.
+
+* [Ivy](https://github.com/unifyai/ivy) **(not actively updated)** - A high-level deep learning library that unifies NumPy, PyTorch, TensorFlow, MXNet and JAX.
+
+* [Jina](https://github.com/jina-ai/jina) - A high-level deep learning library for serving and deployment.
+
+* [Haiku](https://github.com/deepmind/dm-haiku) - A high-level deep learning library based on JAX.
+
+* [Turi Create](https://github.com/apple/turicreate) **(not actively updated)** - A machine learning library for deployment on MacOS/iOS.
 
 ## Machine Learning Framework
 
-* [scikit-learn](https://github.com/scikit-learn/scikit-learn) - Machine learning toolkit for Python
+* [scikit-learn](https://github.com/scikit-learn/scikit-learn) - Machine learning toolkit for Python.
 
-* [XGBoost](https://github.com/dmlc/xgboost) - Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library
+* [XGBoost](https://github.com/dmlc/xgboost) - Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library.
   * Supported platform: *Linux, Windows, MacOS*
   * Supported distributed framework: *Hadoop, Spark, Dask, Flink, DataFlow*
   * Language API: *Python, C++, R, Java, Scala, Go*
 
-* [LightGBM](https://github.com/microsoft/LightGBM) - A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms
+* [LightGBM](https://github.com/microsoft/LightGBM) - A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms.
   * Supported platform: *Linux, Windows, MacOS*
   * Language API: *Python, C++, R*
 
-* [CatBoost](https://github.com/catboost/catboost) - A fast, scalable, high performance Gradient Boosting on Decision Trees library
+* [CatBoost](https://github.com/catboost/catboost) - A fast, scalable, high performance Gradient Boosting on Decision Trees library.
   * Supported platform: *Linux, Windows, MacOS*
   * Language API: *Python, C++, R, Java*
 
-* [JAX](https://github.com/google/jax) - Automatical differentiation for native Python and NumPy functions, with support for GPU
+* [JAX](https://github.com/google/jax) - Automatical differentiation for native Python and NumPy functions, with GPU support.
+
+* [Flax](https://github.com/google/flax) - A high-performance neural network library and ecosystem for JAX that is designed for flexibility.
+
+* [mlpack](https://github.com/mlpack/mlpack) **(not actively updated)** - A header-only C++ machine learning library.
+  * Language API: *C++, Python, R, Julia, Go*
+
+* [fklearn](https://github.com/nubank/fklearn) - A machine learning library that uses functional programming principles.
+
+* [xLearn](https://github.com/aksnzhy/xlearn) **(not actively updated)** - A C++ machine learning library for linear model (LR), factorization machines (FM), and field-aware factorization machines (FFM).
+
+* [ThunderGBM](https://github.com/Xtra-Computing/thundergbm) **(not actively updated)** - Fast GBDTs and Random Forests on GPUs.
+
+* [ThunderSVM](https://github.com/Xtra-Computing/thundersvm) **(not actively updated)** - A Fast SVM Library on GPUs and CPUs.
+
+## Computer Vision
+
+## Natural Language Processing
+
+* [spaCy](https://github.com/explosion/spaCy) - Industrial-strength Natural Language Processing (NLP) in Python.
+
+## Reinforcement Learning
+
+* [Vowpal Wabbit](https://github.com/VowpalWabbit/vowpal_wabbit) - A fast, flexible, online, and active learning solution for solving complex interactive machine learning problems.
 
 ## Linear Algebra / Statistics Toolkit
 
-* [NumPy](https://github.com/numpy/numpy) - The fundamental package for scientific computing with Python
+* [NumPy](https://github.com/numpy/numpy) - The fundamental package for scientific computing with Python.
 
-* [SciPy](https://github.com/scipy/scipy) - An open-source software for mathematics, science, and engineering in Python
+* [SciPy](https://github.com/scipy/scipy) - An open-source software for mathematics, science, and engineering in Python.
 
-* [CuPy](https://github.com/cupy/cupy) - A NumPy/SciPy-compatible array library for GPU-accelerated computing with Python
+* [CuPy](https://github.com/cupy/cupy) - A NumPy/SciPy-compatible array library for GPU-accelerated computing with Python.
 
-* [Statsmodels](https://github.com/statsmodels/statsmodels) - Statistical modeling and econometrics in Python
+* [Statsmodels](https://github.com/statsmodels/statsmodels) - Statistical modeling and econometrics in Python.
 
-* [Theano](https://github.com/Theano/Theano) **(no longer maintained)** - A Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently
+* [Theano](https://github.com/Theano/Theano) **(no longer maintained)** - A Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.
 
-* [Aesara](https://github.com/aesara-devs/aesara) **(successor of Theano)** - A Python library that allows one to define, optimize/rewrite, and evaluate mathematical expressions, especially ones involving multi-dimensional arrays
+* [Aesara](https://github.com/aesara-devs/aesara) **(successor of Theano)** - A Python library that allows one to define, optimize/rewrite, and evaluate mathematical expressions, especially ones involving multi-dimensional arrays.
+
+* [einops](https://github.com/arogozhnikov/einops) - A tensor operation library for NumPy, PyTorch, TensorFlow and JAX.
+
+## Machine Learning Utilities
+
+* [Towhee](https://github.com/towhee-io/towhee) - Data processing pipelines for neural networks.
 
 ## Machine Learning Tutorials
 
@@ -112,30 +193,33 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
   ![labml.ai](/imgs/labml.ai.png)
 
-* [PyTorch official tutorials](https://pytorch.org/tutorials/) - Official tutorials for PyTorch
+* [PyTorch official tutorials](https://pytorch.org/tutorials/) - Official tutorials for PyTorch.
 
-* [numpy-100](https://github.com/rougier/numpy-100) - 100 numpy exercises (with solutions)
+* [numpy-100](https://github.com/rougier/numpy-100) - 100 numpy exercises (with solutions).
 
-## Computer Vision
+# Full-Stack Development
 
-## Natural Language Processing
+## Data Management & Processing
 
+* [Apache Flink](https://github.com/apache/flink) - An open source stream processing framework with powerful stream- and batch-processing capabilities.
 
 ---
 
 # Academic
 
-## Paper Reading
-
 ## Mathematics
+
+## Paper Reading
 
 
 ---
 
 # Useful Tools
 
-## 
+## Mac
+
+* [Scroll-Reverser](https://github.com/pilotmoon/Scroll-Reverser) - Reverses the direction of macOS scrolling, with independent settings for trackpads and mice.
+
+## Cross-Platform
 
 * [LANDrop](https://github.com/LANDrop/LANDrop) - A cross-platform tool that you can use to conveniently transfer photos, videos, and other types of files to other devices on the same local network.
-
-
