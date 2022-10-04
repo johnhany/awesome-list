@@ -12,9 +12,11 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
   - [Natural Language Processing](#natural-language-processing)
   - [Reinforcement Learning](#reinforcement-learning)
   - [Linear Algebra / Statistics Toolkit](#linear-algebra--statistics-toolkit)
-  - [Machine Learning Utilities](#machine-learning-utilities)
+  - [Data Processing](#data-processing)
+  - [Data Visualization](#data-visualization)
   - [Machine Learning Tutorials](#machine-learning-tutorials)
 - [Full-Stack Development](#full-stack-development)
+  - [Web Development](#web-development)
   - [Data Management & Processing](#data-management--processing)
 - [Academic](#academic)
   - [Mathematics](#mathematics)
@@ -161,7 +163,45 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 ## Natural Language Processing
 
+* [HuggingFace Transformers](https://github.com/huggingface/transformers) - A high-level machine learning library for text, images and audio data, with support for Pytorch, TensorFlow and JAX.
+
+* [HuggingFace Tokenizers](https://github.com/huggingface/tokenizers) - A high-performance library for text vocabularies and tokenizers.
+
+* [NLTK](https://github.com/nltk/nltk) - An open source natural language processing library in Python.
+
 * [spaCy](https://github.com/explosion/spaCy) - Industrial-strength Natural Language Processing (NLP) in Python.
+
+* [Spark NLP](https://github.com/JohnSnowLabs/spark-nlp) - An open source natural language processing library for Apache Spark.
+
+* [Flair](https://github.com/flairNLP/flair) - An open source natural language processing library, based on PyTorch.
+
+* [Fairseq](https://github.com/facebookresearch/fairseq) - A sequence-to-sequence toolkit by Facebook, based on PyTorch.
+
+* [ParlAI](https://github.com/facebookresearch/ParlAI) - A python framework for sharing, training and testing dialogue models from open-domain chitchat, based on PyTorch.
+
+* [Stanza](https://github.com/stanfordnlp/stanza) - An open source natural language processing library by Stanford NLP Group, based on PyTorch.
+
+* [NeMo](https://github.com/NVIDIA/NeMo) - A toolkit for conversational AI, based on PyTorch.
+
+* [Haystack](https://github.com/deepset-ai/haystack) - A high-level natural language processing library for deployment and production, based on PyTorch and HuggingFace Transformers.
+
+* [OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py) - The PyTorch version of the OpenNMT project, an open-source neural machine translation framework.
+
+* [OpenNMT-tf](https://github.com/OpenNMT/OpenNMT-tf) - The TensorFlow version of the OpenNMT project, an open-source neural machine translation framework.
+
+* [AllenNLP](https://github.com/allenai/allennlp) **(not actively updated)** - An open source natural language processing library, based on PyTorch.
+
+* [Gensim](https://github.com/RaRe-Technologies/gensim) - A Python library for topic modelling, document indexing and similarity retrieval with large corpora, based on NumPy and SciPy.
+
+* [Rasa](https://github.com/RasaHQ/rasa) - Open source machine learning framework to automate text- and voice-based conversations.
+
+* [SentencePiece](https://github.com/google/sentencepiece) - Unsupervised text tokenizer for Neural Network-based text generation.
+
+* [subword-nmt](https://github.com/rsennrich/subword-nmt) - Unsupervised Word Segmentation for Neural Machine Translation and Text Generation.
+
+* [fastText](https://github.com/facebookresearch/fastText) **(not actively updated)** - A library for efficient learning of word representations and sentence classification.
+
+* [TextBlob](https://github.com/sloria/TextBlob) **(not actively updated)** - A Python library for processing textual data.
 
 ## Reinforcement Learning
 
@@ -183,9 +223,77 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [einops](https://github.com/arogozhnikov/einops) - A tensor operation library for NumPy, PyTorch, TensorFlow and JAX.
 
-## Machine Learning Utilities
+* [openTSNE](https://github.com/pavlin-policar/openTSNE) - Extensible, parallel Python implementations of t-SNE.
+
+* [UMAP](https://github.com/lmcinnes/umap) - Uniform Manifold Approximation and Projection, a dimension reduction technique that can be used for visualisation similarly to t-SNE.
+
+## Data Processing
 
 * [Towhee](https://github.com/towhee-io/towhee) - Data processing pipelines for neural networks.
+
+* [pandas-profiling](https://github.com/ydataai/pandas-profiling) - Create HTML data profiling reports for pandas DataFrame.
+
+* [FiftyOne](https://github.com/voxel51/fiftyone) - An open-source tool for building high-quality datasets and computer vision models.
+
+## Data Visualization
+
+* [Matplotlib](https://github.com/matplotlib/matplotlib) - A comprehensive library for creating static, animated, and interactive visualizations in Python.
+
+* [Seaborn](https://github.com/mwaskom/seaborn) - A high-level interface for drawing statistical graphics, based on Matplotlib.
+
+* [HyperTools](https://github.com/ContextLab/hypertools) - A Python toolbox for gaining geometric insights into high-dimensional data, based on Matplotlib and Seaborn.
+
+* [Bokeh](https://github.com/bokeh/bokeh) - Interactive Data Visualization in the browser, from Python.
+
+* [Plotly.js](https://github.com/plotly/plotly.js) - Open-source JavaScript charting library behind Plotly and Dash.
+
+* [Plotly.py](https://github.com/plotly/plotly.py) - An interactive, open-source, and browser-based graphing library for Python, based on Plotly.js.
+
+* [Dash](https://github.com/plotly/dash) - Analytical Web Apps for Python, R, Julia and Jupyter, based on Plotly.js.
+
+* [Datapane](https://github.com/datapane/datapane) - An open-source framework to create data science reports in Python.
+
+* [mpld3](https://github.com/mpld3/mpld3) - An interactive Matplotlib visualization tool in browser, based on D3.
+
+* [Vega](https://github.com/vega/vega) - A visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs.
+
+* [Vega-Lite](https://github.com/vega/vega-lite) - Provides a higher-level grammar for visual analysis that generates complete Vega specifications.
+
+* [Vega-Altair](https://github.com/altair-viz/altair) - A declarative statistical visualization library for Python, based on Vega-Lite.
+
+* [PyQtGraph](https://github.com/pyqtgraph/pyqtgraph) - Fast data visualization and GUI tools for scientific / engineering applications.
+
+* [VisPy](https://github.com/vispy/vispy) - A high-performance interactive 2D/3D data visualization library, with OpenGL support.
+
+* [PyVista](https://github.com/pyvista/pyvista) - 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK).
+
+* [Holoviews](https://github.com/holoviz/holoviews) - An open-source Python library designed to make data analysis and visualization seamless and simple.
+
+* [Graphviz](https://github.com/xflr6/graphviz) - Python interface for Graphviz to create and render graphs.
+
+* [Apache ECharts](https://github.com/apache/echarts) - A powerful, interactive charting and data visualization library for browser.
+
+* [pyecharts](https://github.com/pyecharts/pyecharts) - A Python visualization interface for Apache ECharts.
+
+* [word_cloud](https://github.com/amueller/word_cloud) - A little word cloud generator in Python.
+
+* [Datashader](https://github.com/holoviz/datashader) - A data rasterization pipeline for automating the process of creating meaningful representations of large amounts of data.
+
+* [Perspective](https://github.com/finos/perspective) - A data visualization and analytics component, especially well-suited for large and/or streaming datasets.
+
+* [ggplot2](https://github.com/tidyverse/ggplot2) - An implementation of the Grammar of Graphics in R.
+
+* [plotnine](https://github.com/has2k1/plotnine) - An implementation of the Grammar of Graphics in Python, based on ggplot2.
+
+* [bqplot](https://github.com/bqplot/bqplot) - An implementation of the Grammar of Graphics for IPython/Jupyter notebooks.
+
+* [D-Tale](https://github.com/man-group/dtale) - A visualization tool for Pandas DataFrame, with ipython notebooks support.
+
+* [missingno](https://github.com/ResidentMario/missingno) - A Python visualization tool for missing data.
+
+* [HiPlot](https://github.com/facebookresearch/hiplot) - A lightweight interactive visualization tool to help AI researchers discover correlations and patterns in high-dimensional data.
+
+* [Sweetviz](https://github.com/fbdesignpro/sweetviz) - Visualize and compare datasets, target values and associations, with one line of code.
 
 ## Machine Learning Tutorials
 
@@ -198,6 +306,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [numpy-100](https://github.com/rougier/numpy-100) - 100 numpy exercises (with solutions).
 
 # Full-Stack Development
+
+## Web Development
+
+* [D3](https://github.com/d3/d3) - A JavaScript library for visualizing data using web standards.
 
 ## Data Management & Processing
 
