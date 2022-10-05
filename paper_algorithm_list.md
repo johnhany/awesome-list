@@ -9,6 +9,8 @@
   - [Image & Video Generation](#image--video-generation)
 - [Natural Language Processing & Time-Series](#natural-language-processing--time-series)
   - [Named Entity Recognition](#named-entity-recognition)
+  - [Speech Recognition](#speech-recognition)
+  - [Time-Series Forecasting](#time-series-forecasting)
 - [Graph](#graph)
 
 ---
@@ -35,7 +37,23 @@
   * An Open Toolkit for Knowledge Graph Extraction and Construction published at EMNLP2022 System Demonstrations.
   * [github.com/zjunlp/DeepKE](https://github.com/zjunlp/DeepKE)
 
+## Speech Recognition
+
+* [Deep Speech: Scaling up end-to-end speech recognition](https://arxiv.org/pdf/1412.5567.pdf)
+  * [github.com/mozilla/DeepSpeech](https://github.com/mozilla/DeepSpeech) - an open source embedded speech-to-text engine which can run in real time on devices.
+
+## Time-Series Forecasting
+
+* [Greykite: Deploying Flexible Forecasting at Scale at LinkedIn](https://arxiv.org/pdf/2207.07788.pdf) - KDD 2022
+  * [github.com/linkedin/greykite](https://github.com/linkedin/greykite)
+
+* [AR-Net: A simple Auto-Regressive Neural Network for time-series](https://arxiv.org/pdf/1911.12436.pdf)
+  * [github.com/ourownstory/AR-Net](https://github.com/ourownstory/AR-Net)
+
+* [github.com/ourownstory/neural_prophet](https://github.com/ourownstory/neural_prophet)
+  * A Neural Network based Time-Series model, inspired by Facebook Prophet and AR-Net, built on PyTorch.
+
 # Graph
 
 * [Design Space for Graph Neural Networks](https://arxiv.org/pdf/2011.08843.pdf)
-  * [GraphGym](https://github.com/snap-stanford/GraphGym) - A platform for designing and evaluating Graph Neural Networks.
+  * [github.com/snap-stanford/GraphGym](https://github.com/snap-stanford/GraphGym) - A platform for designing and evaluating Graph Neural Networks.

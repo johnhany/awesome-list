@@ -4,6 +4,12 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 > For specific paper or algorithm, refer to
 > [Paper & Algorithm list](/paper_algorithm_list.md)
 
+> For machine learning datasets, refer to
+> [Dataset List](dataset_list.md)
+
+> References:
+> [github.com/ml-tooling/best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python)
+
 ---
 
 # Table of Contents
@@ -15,11 +21,11 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
   - [Natural Language Processing](#natural-language-processing)
   - [Reinforcement Learning](#reinforcement-learning)
   - [Graph](#graph)
+  - [Time-Series & Financial](#time-series--financial)
   - [Linear Algebra / Statistics Toolkit](#linear-algebra--statistics-toolkit)
   - [Data Processing](#data-processing)
   - [Data Visualization](#data-visualization)
   - [Machine Learning Tutorials](#machine-learning-tutorials)
-  - [Datasets](#datasets)
 - [Full-Stack Development](#full-stack-development)
   - [Web Development](#web-development)
   - [Data Management & Processing](#data-management--processing)
@@ -39,7 +45,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [PyTorch](https://github.com/pytorch/pytorch) - An open source deep learning framework by Facebook, with GPU and dynamic graph support.
   * Supported platform: *Linux, Windows, MacOS, Android, iOS*
   * Language API: *Python, C++, Java*
-  * <details><summary>Related projects (click to expand):</summary>
+  * <details open><summary>Related projects (click to expand):</summary>
 
     * [TorchVision](https://github.com/pytorch/vision) - Datasets, Transforms and Models specific to Computer Vision for PyTorch
     * [TorchText](https://github.com/pytorch/text) - Data loaders and abstractions for text and NLP for PyTorch
@@ -54,7 +60,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [TensorFlow](https://github.com/tensorflow/tensorflow) - An open source deep learning framework by Google, with GPU support.
   * Supported platform: *Linux, Windows, MacOS, Android, iOS, Raspberry Pi, Web*
   * Language API: *Python, C++, Java, JavaScript*
-  * <details><summary>Related projects (click to expand):</summary>
+  * <details open><summary>Related projects (click to expand):</summary>
 
     * [TensorFlow Text](https://github.com/tensorflow/text) - A collection of text related classes and ops for TensorFlow
     * [TensorBoard](https://github.com/tensorflow/tensorboard) - TensorFlow's Visualization Toolkit
@@ -74,7 +80,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [PaddlePaddle](https://github.com/PaddlePaddle/Paddle) - An open source deep learning framework by Baidu, with GPU support.
   * Supported platform: *Linux, Windows, MacOS, Android, iOS, Web*
   * Language API: *Python, C++, Java, JavaScript*
-  * <details><summary>Related projects (click to expand):</summary>
+  * <details open><summary>Related projects (click to expand):</summary>
 
     * [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) - Multilingual OCR toolkits based on PaddlePaddle
     * [PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection) - Object detection toolkit based on PaddlePaddle
@@ -171,7 +177,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 ## Computer Vision
 
 * [OpenCV](https://github.com/opencv/opencv) - Open Source Computer Vision Library.
-  * <details><summary>Related projects (click to expand):</summary>
+  * <details open><summary>Related projects (click to expand):</summary>
 
     * [opencv_contrib](https://github.com/opencv/opencv_contrib) - Repository for OpenCV's extra modules.
   </details>
@@ -248,11 +254,27 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Stanza](https://github.com/stanfordnlp/stanza) - An open source natural language processing library by Stanford NLP Group, based on PyTorch.
 
+* [ESPnet](https://github.com/espnet/espnet) - An end-to-end speech processing toolkit covering end-to-end speech recognition, text-to-speech, speech translation, speech enhancement, speaker diarization, spoken language understanding, based on PyTorch.
+
+* [SpeechBrain](https://github.com/speechbrain/speechbrain) - An open-source and all-in-one conversational AI toolkit based on PyTorch.
+
 * [NeMo](https://github.com/NVIDIA/NeMo) - A toolkit for conversational AI, based on PyTorch.
 
 * [Sockeye](https://github.com/awslabs/sockeye) - An open-source sequence-to-sequence framework for Neural Machine Translation, based on PyTorch.
 
 * [DeepPavlov](https://github.com/deeppavlov/DeepPavlov) - An open-source conversational AI library built on TensorFlow, Keras and PyTorch.
+
+* [Spleeter](https://github.com/deezer/spleeter) - A source separation library with pretrained models, based on TensorFlow.
+
+* [TTS](https://github.com/coqui-ai/TTS) - A library for advanced Text-to-Speech generation.
+
+* [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis) - A Python library for audio feature extraction, classification, segmentation and applications.
+
+* [Porcupine](https://github.com/Picovoice/porcupine) - On-device wake word detection powered by deep learning.
+
+* [SpeechRecognition](https://github.com/Uberi/speech_recognition) **(not actively updated)** - Library for performing speech recognition, with support for several engines and APIs, online and offline.
+
+* [Magenta](https://github.com/magenta/magenta) **(no longer maintained)** - Music and Art Generation with Machine Intelligence.
 
 * [FARM](https://github.com/deepset-ai/FARM) **(not actively updated)** - Fast & easy transfer learning for NLP, which focuses on Question Answering.
 
@@ -324,6 +346,48 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [StellarGraph](https://github.com/stellargraph/stellargraph) **(not actively updated)** - A Python library for machine learning on graphs and networks.
 
+## Time-Series & Financial
+
+* [Prophet](https://github.com/facebook/prophet) - Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth.
+
+* [darts](https://github.com/unit8co/darts) - A python library for easy manipulation and forecasting of time series.
+
+* [GluonTS](https://github.com/awslabs/gluonts) - Probabilistic time series modeling in Python.
+
+* [tslearn](https://github.com/tslearn-team/tslearn) - A machine learning toolkit dedicated to time-series data.
+
+* [sktime](https://github.com/sktime/sktime) - A unified framework for machine learning with time series.
+
+* [PyTorch Forecasting](https://github.com/jdb78/pytorch-forecasting) - Time series forecasting with PyTorch.
+
+* [STUMPY](https://github.com/TDAmeritrade/stumpy) - A powerful and scalable Python library for modern time series analysis.
+
+* [StatsForecast](https://github.com/Nixtla/statsforecast) - Offers a collection of widely used univariate time series forecasting models, including automatic ARIMA and ETS modeling optimized for high performance using numba.
+
+* [Orbit](https://github.com/uber/orbit) - A Python package for Bayesian time series forecasting and inference.
+
+* [Pmdarima](https://github.com/alkaline-ml/pmdarima) - A statistical library designed to fill the void in Python's time series analysis capabilities, including the equivalent of R's auto.arima function.
+
+* [pyts](https://github.com/johannfaouzi/pyts) **(not actively updated)** - A Python package for time series classification.
+
+* [Qlib](https://github.com/microsoft/qlib) - An AI-oriented quantitative investment platform, which aims to realize the potential, empower the research, and create the value of AI technologies in quantitative investment.
+
+* [IB-insync](https://github.com/erdewit/ib_insync) - Python sync/async framework for Interactive Brokers API.
+
+* [ffn](https://github.com/pmorissette/ffn) - A financial function library for Python.
+
+* [bt](https://github.com/pmorissette/bt) - A flexible backtesting framework for Python used to test quantitative trading strategies, based on ffn.
+
+* [finmarketpy](https://github.com/cuemacro/finmarketpy) - Python library for backtesting trading strategies & analyzing financial markets.
+
+* [TensorTrade](https://github.com/tensortrade-org/tensortrade) - An open source reinforcement learning framework for training, evaluating, and deploying robust trading agents, based on TensorFlow.
+
+* [TF Quant Finance](https://github.com/google/tf-quant-finance) - High-performance TensorFlow library for quantitative finance.
+
+* [CryptoSignal](https://github.com/CryptoSignal/Crypto-Signal) **(not actively updated)** - A command line tool that automates your crypto currency Technical Analysis (TA).
+
+* [Catalyst](https://github.com/scrtlabs/catalyst) **(no longer maintained)** - An algorithmic trading library for crypto-assets written in Python.
+
 ## Linear Algebra / Statistics Toolkit
 
 * [NumPy](https://github.com/numpy/numpy) - The fundamental package for scientific computing with Python.
@@ -390,7 +454,23 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [ftfy](https://github.com/rspeer/python-ftfy) - Fixes mojibake and other glitches in Unicode text.
 
+* [librosa](https://github.com/librosa/librosa) - A python package for music and audio analysis.
+
+* [Pydub](https://github.com/jiaaro/pydub) - Manipulate audio with a simple and easy high level interface.
+
+* [Audiomentations](https://github.com/iver56/audiomentations) - A Python library for audio data augmentation.
+
+* [torch-audiomentations](https://github.com/asteroid-team/torch-audiomentations) - Fast audio data augmentation in PyTorch, with GPU support.
+
+* [DDSP](https://github.com/magenta/ddsp) - A library of differentiable versions of common DSP functions.
+
+* [TSFRESH](https://github.com/blue-yonder/tsfresh) - Automatic extraction of relevant features from time series.
+
 * [Qdrant](https://github.com/qdrant/qdrant) - A vector similarity search engine for text, image and categorical data in Rust.
+
+* [TA](https://github.com/bukosabino/ta) - A Technical Analysis library useful to do feature engineering from financial time series datasets, based on Pandas and NumPy.
+
+* [stockstats](https://github.com/jealous/stockstats) - Supply a wrapper ``StockDataFrame`` based on the ``pandas.DataFrame`` with inline stock statistics/indicators support.
 
 ## Data Visualization
 
@@ -463,10 +543,6 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [PyTorch official tutorials](https://pytorch.org/tutorials/) - Official tutorials for PyTorch.
 
 * [numpy-100](https://github.com/rougier/numpy-100) - 100 numpy exercises (with solutions).
-
-## Datasets
-
-* [english-words](https://github.com/dwyl/english-words) - A text file containing 479k English words for all your dictionary/word-based projects.
 
 # Full-Stack Development
 
