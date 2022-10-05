@@ -4,6 +4,10 @@
         "README.md": [
             "# Awesome List",
             "# Table of Contents",
+        ],
+        "paper_algorithm_list.md": [
+            "# Paper & Algorithm List",
+            "# Table of Contents",
         ]
       }
 }
