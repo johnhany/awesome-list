@@ -6,6 +6,7 @@
 
 - [Computer Vision](#computer-vision)
   - [Recognition & Detection](#recognition--detection)
+  - [OCR](#ocr)
   - [Image & Video Generation](#image--video-generation)
 - [Natural Language Processing & Time-Series](#natural-language-processing--time-series)
   - [Named Entity Recognition](#named-entity-recognition)
@@ -23,6 +24,12 @@
   * [github.com/facebookresearch/detr](https://github.com/facebookresearch/detr)
 * [github.com/timesler/facenet-pytorch](https://github.com/timesler/facenet-pytorch)
   * Pretrained Pytorch face detection (MTCNN) and facial recognition (InceptionResnet) models.
+
+## OCR
+
+* [Character Region Awareness for Text Detection](https://arxiv.org/pdf/1904.01941.pdf)
+  * [github.com/clovaai/CRAFT-pytorch](https://github.com/clovaai/CRAFT-pytorch) - Official implementation of CRAFT
+  * [github.com/faustomorales/keras-ocr](https://github.com/faustomorales/keras-ocr) - A packaged and flexible version of the CRAFT text detector and Keras CRNN recognition model.
 
 ## Image & Video Generation
 
