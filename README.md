@@ -21,6 +21,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
   - [Natural Language Processing](#natural-language-processing)
   - [Reinforcement Learning](#reinforcement-learning)
   - [Graph](#graph)
+  - [Causal Inference](#causal-inference)
   - [Recommendation, Advertisement & Ranking](#recommendation-advertisement--ranking)
   - [Time-Series & Financial](#time-series--financial)
   - [Linear Algebra / Statistics Toolkit](#linear-algebra--statistics-toolkit)
@@ -57,8 +58,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     * [Ignite](https://github.com/pytorch/ignite) - High-level library to help with training and evaluating neural networks for PyTorch
     * [Captum](https://github.com/pytorch/captum) - A model interpretability and understanding library for PyTorch
     * [Glow](https://github.com/pytorch/glow) - Compiler for Neural Network hardware accelerators
-    * [BoTorch](https://github.com/pytorch/botorch) - Bayesian optimization in PyTorch.
-    * [TorchMetrics](https://github.com/Lightning-AI/metrics) - Machine learning metrics for distributed, scalable PyTorch applications.
+    * [BoTorch](https://github.com/pytorch/botorch) - Bayesian optimization in PyTorch
+    * [TNT](https://github.com/pytorch/tnt) - A library for PyTorch training tools and utilities
+    * [tensorboardX](https://github.com/lanpa/tensorboardX) - Tensorboard for pytorch (and chainer, mxnet, numpy, ...)
+    * [TorchMetrics](https://github.com/Lightning-AI/metrics) - Machine learning metrics for distributed, scalable PyTorch applications
     </details>
 
 * [TensorFlow](https://github.com/tensorflow/tensorflow) - An open source deep learning framework by Google, with GPU support.
@@ -75,6 +78,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     * [TensorFlow Model Garden](https://github.com/tensorflow/models) - Models and examples built with TensorFlow
     * [TensorFlow.js](https://github.com/tensorflow/tfjs) - A WebGL accelerated JavaScript library for training and deploying ML models based on TensorFlow
     * [Tensor2Tensor](https://github.com/tensorflow/tensor2tensor) **(no longer maintained)** - Library of deep learning models and datasets designed to make deep learning more accessible and accelerate ML research
+    * [TensorFlow Model Analysis](https://github.com/tensorflow/model-analysis) - A library for evaluating TensorFlow models
     * [Trax](https://github.com/google/trax) **(successor of Tensor2Tensor)** - Deep Learning with Clear Code and Speed
     * [tf_numpy](https://www.tensorflow.org/guide/tf_numpy) - A subset of the NumPy API implemented in TensorFlow
     * [TensorFlowOnSpark](https://github.com/yahoo/TensorFlowOnSpark) - Brings TensorFlow programs to Apache Spark clusters
@@ -103,6 +107,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     * [PaddleHub](https://github.com/PaddlePaddle/PaddleHub) - Pre-trained models toolkit based on PaddlePaddle
     * [Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) - Multi-platform high performance deep learning inference engine for PaddlePaddle
     * [Paddle.js](https://github.com/PaddlePaddle/Paddle.js) - An open source deep learning framework running in the browser based on PaddlePaddle
+    * [VisualDL](https://github.com/PaddlePaddle/VisualDL) - A visualization analysis tool of PaddlePaddle
     </details>
 
 * [MegEngine](https://github.com/MegEngine/MegEngine) - An open source deep learning framework by MEGVII, with GPU support.
@@ -128,6 +133,12 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Haiku](https://github.com/deepmind/dm-haiku) - A high-level deep learning library based on JAX.
 
+* [Triton](https://github.com/openai/triton) - A language and compiler for writing highly efficient custom Deep-Learning primitives.
+
+* [Hummingbird](https://github.com/microsoft/hummingbird) - A library for compiling trained traditional ML models into tensor computations.
+
+* [m2cgen](https://github.com/BayesWitnesses/m2cgen) - Transform ML models into a native code (Java, C, Python, Go, JavaScript, Visual Basic, C#, R, PowerShell, PHP, Dart, Haskell, Ruby, F#, Rust) with zero dependencies.
+
 * [DeepSpeed](https://github.com/microsoft/DeepSpeed) - An easy-to-use deep learning optimization software suite that enables unprecedented scale and speed for Deep Learning Training and Inference.
 
 * [Analytics Zoo](https://github.com/intel-analytics/analytics-zoo) **(no longer maintained)** - Distributed Tensorflow, Keras and PyTorch on Apache Spark/Flink & Ray.
@@ -140,17 +151,27 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Ray](https://github.com/ray-project/ray) - A unified framework for scaling AI and Python applications. Ray consists of a core distributed runtime and a toolkit of libraries (Ray AIR) for accelerating ML workloads.
 
+* [BentoML](https://github.com/bentoml/BentoML) - BentoML is compatible across machine learning frameworks and standardizes ML model packaging and management for your team.
+
+* [cortex](https://github.com/cortexlabs/cortex) - Production infrastructure for machine learning at scale.
+
 * [Horovod](https://github.com/horovod/horovod) - Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet.
 
 * [Elephas](https://github.com/maxpumperla/elephas) **(no longer maintained)** - Distributed Deep learning with Keras & Spark.
 
 * [Elephas](https://github.com/danielenricocahall/elephas) **(successor of maxpumperla/elephas)** - Distributed Deep learning with Keras & Spark.
 
+* [ONNX](https://github.com/onnx/onnx) - Open standard for machine learning interoperability.
+
+* [Core ML Tools](https://github.com/apple/coremltools) - Contains supporting tools for Core ML model conversion, editing, and validation.
+
 * [Petastorm](https://github.com/uber/petastorm) - Enables single machine or distributed training and evaluation of deep learning models from datasets in Apache Parquet format.
 
 * [Hivemind](https://github.com/learning-at-home/hivemind) - Decentralized deep learning in PyTorch. Built to train models on thousands of volunteers across the world.
 
 * [Mesh Transformer JAX](https://github.com/kingoflolz/mesh-transformer-jax) - Model parallel transformers in JAX and Haiku.
+
+* [Nebullvm](https://github.com/nebuly-ai/nebullvm) - An open-source tool designed to speed up AI inference in just a few lines of code.
 
 * [NNI](https://github.com/microsoft/nni) - An open source AutoML toolkit for automate machine learning lifecycle, including feature engineering, neural architecture search, model compression and hyper-parameter tuning.
 
@@ -161,6 +182,16 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [KerasTuner](https://github.com/keras-team/keras-tuner) - An easy-to-use, scalable hyperparameter optimization framework that solves the pain points of hyperparameter search.
 
 * [Talos](https://github.com/autonomio/talos) - Hyperparameter Optimization for TensorFlow, Keras and PyTorch.
+
+* [AI Explainability 360](https://github.com/Trusted-AI/AIX360) - An open-source library that supports interpretability and explainability of datasets and machine learning models.
+
+* [explainerdashboard](https://github.com/oegedijk/explainerdashboard) - Quickly build Explainable AI dashboards that show the inner workings of so-called "blackbox" machine learning models.
+
+* [iNNvestigate](https://github.com/albermax/innvestigate) - A toolbox to innvestigate neural networks' predictions.
+
+* [Fairlearn](https://github.com/fairlearn/fairlearn) - A Python package to assess and improve fairness of machine learning models.
+
+* [AI Fairness 360](https://github.com/Trusted-AI/AIF360) - A comprehensive set of fairness metrics for datasets and machine learning models, explanations for these metrics, and algorithms to mitigate bias in datasets and models.
 
 * [CNTK](https://github.com/microsoft/CNTK) **(not actively updated)** - An open source deep learning framework by Microsoft, with GPU support.
   * Supported platform: *Linux, Windows*
@@ -187,6 +218,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Apache SINGA](https://github.com/apache/singa) **(not actively updated)** - A distributed deep learning platform.
 
 * [BytePS](https://github.com/bytedance/byteps) **(not actively updated)** - A high performance and generic framework for distributed DNN training.
+
+* [MMdnn](https://github.com/microsoft/MMdnn) **(not actively updated)** - MMdnn is a set of tools to help users inter-operate among different deep learning frameworks.
 
 * [Hyperas](https://github.com/maxpumperla/hyperas) **(not actively updated)** - A very simple wrapper for convenient hyperparameter optimization for Keras.
 
@@ -219,6 +252,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Flax](https://github.com/google/flax) - A high-performance neural network library and ecosystem for JAX that is designed for flexibility.
 
+* [sklearn-porter](https://github.com/nok/sklearn-porter) - Transpile trained scikit-learn estimators to C, Java, JavaScript and others.
+
 * [igel](https://github.com/nidhaloff/igel) - A delightful machine learning tool that allows you to train, test, and use models without writing code.
 
 * [fklearn](https://github.com/nubank/fklearn) - A machine learning library that uses functional programming principles.
@@ -242,6 +277,32 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Nevergrad](https://github.com/facebookresearch/nevergrad) - A Python toolbox for performing gradient-free optimization.
 
 * [MLJAR](https://github.com/mljar/mljar-supervised) - Python package for AutoML on Tabular Data with Feature Engineering, Hyper-Parameters Tuning, Explanations and Automatic Documentation.
+
+* [MLflow](https://github.com/mlflow/mlflow) - A platform to streamline machine learning development, including tracking experiments, packaging code into reproducible runs, and sharing and deploying models.
+
+* [PyCaret](https://github.com/pycaret/pycaret) - An open-source, low-code machine learning library in Python that automates machine learning workflows.
+
+* [Aim](https://github.com/aimhubio/aim) - An open-source, self-hosted ML experiment tracking tool.
+
+* [labml](https://github.com/labmlai/labml) - Monitor deep learning model training and hardware usage from your mobile phone.
+
+* [ClearML](https://github.com/allegroai/clearml) - Auto-Magical Suite of tools to streamline your ML workflow Experiment Manager, MLOps and Data-Management.
+
+* [DVC](https://github.com/iterative/dvc) - A command line tool and VS Code Extension for data/model version control.
+
+* [Metaflow](https://github.com/Netflix/metaflow) - A human-friendly Python/R library that helps scientists and engineers build and manage real-life data science projects.
+
+* [Weights&Biases](https://github.com/wandb/wandb) - A tool for visualizing and tracking your machine learning experiments.
+
+* [Yellowbrick](https://github.com/DistrictDataLabs/yellowbrick) - Visual analysis and diagnostic tools to facilitate machine learning model selection.
+
+* [dtreeviz](https://github.com/parrt/dtreeviz) - A python library for decision tree visualization and model interpretation.
+
+* [InterpretML](https://github.com/interpretml/interpret) - An open-source package that incorporates state-of-the-art machine learning interpretability techniques.
+
+* [Shapash](https://github.com/MAIF/shapash) - A Python library which aims to make machine learning interpretable and understandable by everyone.
+
+* [Alibi](https://github.com/SeldonIO/alibi) - An open source Python library aimed at machine learning model inspection and interpretation.
 
 * [mlpack](https://github.com/mlpack/mlpack) **(not actively updated)** - A header-only C++ machine learning library.
   * Language API: *C++, Python, R, Julia, Go*
@@ -411,6 +472,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [OpenPrompt](https://github.com/thunlp/OpenPrompt) - An Open-Source Framework for Prompt-Learning.
 
+* [Language Interpretability Tool](https://github.com/PAIR-code/lit) - Interactively analyze NLP models for model understanding in an extensible and framework agnostic interface.
+
+* [CheckList](https://github.com/marcotcr/checklist) - Behavioral Testing of NLP models with CheckList.
+
 * [Magenta](https://github.com/magenta/magenta) **(no longer maintained)** - Music and Art Generation with Machine Intelligence.
 
 * [FARM](https://github.com/deepset-ai/FARM) **(not actively updated)** - Fast & easy transfer learning for NLP, which focuses on Question Answering.
@@ -487,6 +552,12 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [StellarGraph](https://github.com/stellargraph/stellargraph) **(not actively updated)** - A Python library for machine learning on graphs and networks.
 
+## Causal Inference
+
+* [DoWhy](https://github.com/py-why/dowhy) - A Python library for causal inference that supports explicit modeling and testing of causal assumptions.
+
+* [CausalNex](https://github.com/quantumblacklabs/causalnex) - A Python library that helps data scientists to infer causation rather than observing correlation.
+
 ## Recommendation, Advertisement & Ranking
 
 * [Recommenders](https://github.com/microsoft/recommenders) - Best Practices on Recommendation Systems.
@@ -556,6 +627,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Aesara](https://github.com/aesara-devs/aesara) **(successor of Theano)** - A Python library that allows one to define, optimize/rewrite, and evaluate mathematical expressions, especially ones involving multi-dimensional arrays.
 
 * [einops](https://github.com/arogozhnikov/einops) - A tensor operation library for NumPy, PyTorch, TensorFlow and JAX.
+
+* [shap](https://github.com/slundberg/shap) - A game theoretic approach to explain the output of any machine learning model.
+
+* [ArviZ](https://github.com/arviz-devs/arviz) - A Python package for exploratory analysis of Bayesian models.
 
 * [openTSNE](https://github.com/pavlin-policar/openTSNE) - Extensible, parallel Python implementations of t-SNE.
 
@@ -631,17 +706,17 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Seaborn](https://github.com/mwaskom/seaborn) - A high-level interface for drawing statistical graphics, based on Matplotlib.
 
-* [HyperTools](https://github.com/ContextLab/hypertools) - A Python toolbox for gaining geometric insights into high-dimensional data, based on Matplotlib and Seaborn.
-
 * [Bokeh](https://github.com/bokeh/bokeh) - Interactive Data Visualization in the browser, from Python.
 
 * [Plotly.js](https://github.com/plotly/plotly.js) - Open-source JavaScript charting library behind Plotly and Dash.
 
 * [Plotly.py](https://github.com/plotly/plotly.py) - An interactive, open-source, and browser-based graphing library for Python, based on Plotly.js.
 
-* [Dash](https://github.com/plotly/dash) - Analytical Web Apps for Python, R, Julia and Jupyter, based on Plotly.js.
-
 * [Datapane](https://github.com/datapane/datapane) - An open-source framework to create data science reports in Python.
+
+* [HyperTools](https://github.com/ContextLab/hypertools) - A Python toolbox for gaining geometric insights into high-dimensional data, based on Matplotlib and Seaborn.
+
+* [Dash](https://github.com/plotly/dash) - Analytical Web Apps for Python, R, Julia and Jupyter, based on Plotly.js.
 
 * [mpld3](https://github.com/mpld3/mpld3) - An interactive Matplotlib visualization tool in browser, based on D3.
 
@@ -686,6 +761,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [HiPlot](https://github.com/facebookresearch/hiplot) - A lightweight interactive visualization tool to help AI researchers discover correlations and patterns in high-dimensional data.
 
 * [Sweetviz](https://github.com/fbdesignpro/sweetviz) - Visualize and compare datasets, target values and associations, with one line of code.
+
+* [Netron](https://github.com/lutzroeder/netron) - Visualizer for neural network, deep learning, and machine learning models.
+
+* [livelossplot](https://github.com/stared/livelossplot) - Live training loss plot in Jupyter Notebook for Keras, PyTorch and others.
 
 * [Scattertext](https://github.com/JasonKessler/scattertext) **(not actively updated)** - A tool for finding distinguishing terms in corpora and displaying them in an interactive HTML scatter plot.
 
