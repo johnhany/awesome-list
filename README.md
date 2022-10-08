@@ -1,12 +1,6 @@
 # Awesome List
 A list of useful stuff in Machine Learning, Computer Graphics, Software Development, Mathematics, ...
 
-> For specific paper or algorithm, refer to
-> [Paper & Algorithm list](/paper_algorithm_list.md)
-
-> For machine learning datasets, refer to
-> [Dataset List](dataset_list.md)
-
 > References:
 > [github.com/ml-tooling/best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python)
 
@@ -24,6 +18,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
   - [Causal Inference](#causal-inference)
   - [Recommendation, Advertisement & Ranking](#recommendation-advertisement--ranking)
   - [Time-Series & Financial](#time-series--financial)
+  - [Other Machine Learning Applications](#other-machine-learning-applications)
   - [Linear Algebra / Statistics Toolkit](#linear-algebra--statistics-toolkit)
   - [Data Processing](#data-processing)
   - [Data Visualization](#data-visualization)
@@ -142,6 +137,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [tinygrad](https://github.com/geohot/tinygrad) - A deep learning framework in between a pytorch and a karpathy/micrograd.
 
+* [Avalanche](https://github.com/ContinualAI/avalanche) - An End-to-End Library for Continual Learning, based on PyTorch.
+
 * [ktrain](https://github.com/amaiya/ktrain) - A high-level deep learning library based on TensorFlow.
 
 * [Thinc](https://github.com/explosion/thinc) - A high-level deep learning library for PyTorch, TensorFlow and MXNet.
@@ -212,6 +209,12 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Adversarial Robustness Toolbox](https://github.com/Trusted-AI/adversarial-robustness-toolbox) - Python Library for Machine Learning Security - Evasion, Poisoning, Extraction, Inference.
 
+* [Anomalib](https://github.com/openvinotoolkit/anomalib) - An anomaly detection library comprising state-of-the-art algorithms and features such as experiment management, hyper-parameter optimization, and edge inference.
+
+* [Gradio](https://github.com/gradio-app/gradio) - An open-source Python library that is used to build machine learning and data science demos and web applications.
+
+* [Traingenerator](https://github.com/jrieke/traingenerator) - Generates custom template code for PyTorch & sklearn, using a simple web UI built with streamlit.
+
 * [Fairlearn](https://github.com/fairlearn/fairlearn) - A Python package to assess and improve fairness of machine learning models.
 
 * [AI Fairness 360](https://github.com/Trusted-AI/AIF360) - A comprehensive set of fairness metrics for datasets and machine learning models, explanations for these metrics, and algorithms to mitigate bias in datasets and models.
@@ -281,7 +284,9 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
   * Supported platform: *Linux, Windows, MacOS*
   * Language API: *Python, C++, R, Java*
 
-* [JAX](https://github.com/google/jax) - Automatical differentiation for native Python and NumPy functions, with GPU support.
+* [Autograd](https://github.com/HIPS/autograd) **(no longer maintained)** - Efficiently computes derivatives of numpy code.
+
+* [JAX](https://github.com/google/jax) **(successor of Autograd)** - Automatical differentiation for native Python and NumPy functions, with GPU support.
 
 * [Flax](https://github.com/google/flax) - A high-performance neural network library and ecosystem for JAX that is designed for flexibility.
 
@@ -291,6 +296,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Mlxtend](https://github.com/rasbt/mlxtend) - A library of extension and helper modules for Python's data analysis and machine learning libraries.
 
+* [River](https://github.com/online-ml/river) - A Python library for online machine learning.
+
 * [Annoy](https://github.com/spotify/annoy) - Approximate Nearest Neighbors in C++/Python optimized for memory usage and loading/saving to disk.
 
 * [Hnswlib](https://github.com/nmslib/hnswlib) - Header-only C++/python library for fast approximate nearest neighbors.
@@ -298,6 +305,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [NMSLIB](https://github.com/nmslib/nmslib) - Non-Metric Space Library (NMSLIB): An efficient similarity search library and a toolkit for evaluation of k-NN methods for generic non-metric spaces.
 
 * [ann-benchmarks](https://github.com/erikbern/ann-benchmarks) - Benchmarks of approximate nearest neighbor libraries in Python.
+
+* [kmodes](https://github.com/nicodv/kmodes) - Python implementations of the k-modes and k-prototypes clustering algorithms, for clustering categorical data.
 
 * [FilterPy](https://github.com/rlabbe/filterpy) - Python Kalman filtering and optimal estimation library.
 
@@ -325,6 +334,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [MLJAR](https://github.com/mljar/mljar-supervised) - Python package for AutoML on Tabular Data with Feature Engineering, Hyper-Parameters Tuning, Explanations and Automatic Documentation.
 
+* [gplearn](https://github.com/trevorstephens/gplearn) - Genetic Programming in Python, with a scikit-learn inspired API.
+
 * [MLflow](https://github.com/mlflow/mlflow) - A platform to streamline machine learning development, including tracking experiments, packaging code into reproducible runs, and sharing and deploying models.
 
 * [PyCaret](https://github.com/pycaret/pycaret) - An open-source, low-code machine learning library in Python that automates machine learning workflows.
@@ -350,6 +361,12 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Shapash](https://github.com/MAIF/shapash) - A Python library which aims to make machine learning interpretable and understandable by everyone.
 
 * [Alibi](https://github.com/SeldonIO/alibi) - An open source Python library aimed at machine learning model inspection and interpretation.
+
+* [PyCM](https://github.com/sepandhaghighi/pycm) - Multi-class confusion matrix library in Python.
+
+* [PyOD](https://github.com/yzhao062/pyod) - A Comprehensive and Scalable Python Library for Outlier Detection (Anomaly Detection).
+
+* [Alibi Detect](https://github.com/SeldonIO/alibi-detect) - Algorithms for outlier, adversarial and drift detection.
 
 * [mlpack](https://github.com/mlpack/mlpack) **(not actively updated)** - A header-only C++ machine learning library.
   * Language API: *C++, Python, R, Julia, Go*
@@ -438,6 +455,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) - Adds an OCR text layer to scanned PDF files, allowing them to be searched.
 
 * [LayoutParser](https://github.com/Layout-Parser/layout-parser) - A Unified Toolkit for Deep Learning Based Document Image Analysis, based on Detectron2.
+
+* [benchmark_VAE](https://github.com/clementchadebec/benchmark_VAE) - Implements some of the most common (Variational) Autoencoder models under a unified implementation.
 
 * [pdftabextract](https://github.com/WZBSocialScienceCenter/pdftabextract) **(no longer maintained)** - A set of tools for extracting tables from PDF files helping to do data mining on (OCR-processed) scanned documents.
 
@@ -573,6 +592,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Stable Baselines3](https://github.com/DLR-RM/stable-baselines3) **(successor of OpenAI Baselines and Stable Baselines)** - A set of reliable implementations of reinforcement learning algorithms in PyTorch.
 
+* [PySC2](https://github.com/deepmind/pysc2) - StarCraft II Learning Environment.
+
 * [ViZDoom](https://github.com/mwydmuch/ViZDoom) - Doom-based AI Research Platform for Reinforcement Learning from Raw Visual Information.
 
 * [FinRL](https://github.com/AI4Finance-Foundation/FinRL) - The first open-source framework to show the great potential of financial reinforcement learning.
@@ -604,6 +625,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [StellarGraph](https://github.com/stellargraph/stellargraph) **(not actively updated)** - A Python library for machine learning on graphs and networks.
 
 ## Causal Inference
+
+* [Causal ML](https://github.com/uber/causalml) - Uplift modeling and causal inference with machine learning algorithms.
 
 * [DoWhy](https://github.com/py-why/dowhy) - A Python library for causal inference that supports explicit modeling and testing of causal assumptions.
 
@@ -665,17 +688,33 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Catalyst](https://github.com/scrtlabs/catalyst) **(no longer maintained)** - An algorithmic trading library for crypto-assets written in Python.
 
+## Other Machine Learning Applications
+
+* [DeepChem](https://github.com/deepchem/deepchem) - Democratizing Deep-Learning for Drug Discovery, Quantum Chemistry, Materials Science and Biology.
+
+* [PennyLane](https://github.com/PennyLaneAI/pennylane) - A cross-platform Python library for differentiable programming of quantum computers.
+
+* [CARLA](https://github.com/carla-simulator/carla) **(not actively updated)** - An open-source simulator for autonomous driving research.
+
 ## Linear Algebra / Statistics Toolkit
 
 * [NumPy](https://github.com/numpy/numpy) - The fundamental package for scientific computing with Python.
 
 * [SciPy](https://github.com/scipy/scipy) - An open-source software for mathematics, science, and engineering in Python.
 
+* [SymPy](https://github.com/sympy/sympy) - A computer algebra system written in pure Python.
+
 * [ArrayFire](https://github.com/arrayfire/arrayfire) - A general-purpose tensor library that simplifies the process of software development for the parallel architectures found in CPUs, GPUs, and other hardware acceleration devices
 
 * [CuPy](https://github.com/cupy/cupy) - A NumPy/SciPy-compatible array library for GPU-accelerated computing with Python.
 
 * [PyCUDA](https://github.com/inducer/pycuda) - Pythonic Access to CUDA, with Arrays and Algorithms.
+
+* [Mars](https://github.com/mars-project/mars) - A tensor-based unified framework for large-scale data computation which scales numpy, pandas, scikit-learn and many other libraries.
+
+* [TensorLy](https://github.com/tensorly/tensorly) - A Python library that aims at making tensor learning simple and accessible.
+
+* [Pythran](https://github.com/serge-sans-paille/pythran) - An ahead of time compiler for a subset of the Python language, with a focus on scientific computing.
 
 * [torchdiffeq](https://github.com/rtqichen/torchdiffeq) - Differentiable ordinary differential equation (ODE) solvers with full GPU support and O(1)-memory backpropagation.
 
@@ -733,6 +772,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [VidGear](https://github.com/abhiTronix/vidgear) - A High-performance cross-platform Video Processing Python framework powerpacked with unique trailblazing features.
 
+* [AugLy](https://github.com/facebookresearch/AugLy) - A data augmentations library for audio, image, text, and video.
+
 * [Albumentations](https://github.com/albumentations-team/albumentations) - A Python library for image augmentation.
 
 * [Augmentor](https://github.com/mdbloice/Augmentor) - Image augmentation library in Python for machine learning.
@@ -750,6 +791,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [pandas-profiling](https://github.com/ydataai/pandas-profiling) - Create HTML data profiling reports for pandas DataFrame.
 
 * [FiftyOne](https://github.com/voxel51/fiftyone) - An open-source tool for building high-quality datasets and computer vision models.
+
+* [Datasette](https://github.com/simonw/datasette) - An open source multi-tool for exploring and publishing data.
 
 * [dedupe](https://github.com/dedupeio/dedupe) - A python library that uses machine learning to perform fuzzy matching, deduplication and entity resolution quickly on structured data.
 
@@ -785,6 +828,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Featuretools](https://github.com/alteryx/featuretools) - An open source python library for automated feature engineering.
 
+* [Feature-engine](https://github.com/feature-engine/feature_engine) - A Python library with multiple transformers to engineer and select features for use in machine learning models.
+
 * [fancyimpute](https://github.com/iskandr/fancyimpute) **(not actively updated)** - A variety of matrix completion and imputation algorithms implemented in Python.
 
 ## Data Visualization
@@ -800,6 +845,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Plotly.py](https://github.com/plotly/plotly.py) - An interactive, open-source, and browser-based graphing library for Python, based on Plotly.js.
 
 * [Datapane](https://github.com/datapane/datapane) - An open-source framework to create data science reports in Python.
+
+* [TabPy](https://github.com/tableau/TabPy) - Execute Python code on the fly and display results in Tableau visualizations.
+
+* [Streamlit](https://github.com/streamlit/streamlit) - The fastest way to build data apps in Python.
 
 * [HyperTools](https://github.com/ContextLab/hypertools) - A Python toolbox for gaining geometric insights into high-dimensional data, based on Matplotlib and Seaborn.
 
@@ -874,6 +923,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 ## Data Management & Processing
 
 * [Apache Flink](https://github.com/apache/flink) - An open source stream processing framework with powerful stream- and batch-processing capabilities.
+
+* [StreamAlert](https://github.com/airbnb/streamalert) - A serverless, realtime data analysis framework which empowers you to ingest, analyze, and alert on data from any environment, using datasources and alerting logic you define.
 
 ---
 
