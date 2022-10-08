@@ -4,17 +4,24 @@
 
 # Table of Contents
 
+- [General Purpose Machine Learning](#general-purpose-machine-learning)
 - [Computer Vision](#computer-vision)
   - [Recognition & Detection](#recognition--detection)
   - [OCR](#ocr)
   - [Image & Video Generation](#image--video-generation)
 - [Natural Language Processing & Time-Series](#natural-language-processing--time-series)
+  - [Natural Language Translation](#natural-language-translation)
   - [Named Entity Recognition](#named-entity-recognition)
   - [Speech Recognition](#speech-recognition)
   - [Time-Series Forecasting](#time-series-forecasting)
 - [Graph](#graph)
 
 ---
+
+# General Purpose Machine Learning
+
+* [TabNet: Attentive Interpretable Tabular Learning](https://arxiv.org/pdf/1908.07442.pdf)
+  * [github.com/dreamquark-ai/tabnet](https://github.com/dreamquark-ai/tabnet) - PyTorch implementation of TabNet paper
 
 # Computer Vision
 
@@ -37,6 +44,11 @@
   * Simple command line tool for text to image generation using OpenAI's CLIP and Siren (Implicit neural representation network).
 
 # Natural Language Processing & Time-Series
+
+## Natural Language Translation
+
+* [Reformer: The Efficient Transformer](https://openreview.net/pdf?id=rkgNKkHtvB)
+  * [lucidrains/reformer-pytorch](https://github.com/lucidrains/reformer-pytorch) - Pytorch implementation of Reformer
 
 ## Named Entity Recognition
 

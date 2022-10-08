@@ -62,6 +62,15 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     * [TNT](https://github.com/pytorch/tnt) - A library for PyTorch training tools and utilities
     * [tensorboardX](https://github.com/lanpa/tensorboardX) - Tensorboard for pytorch (and chainer, mxnet, numpy, ...)
     * [TorchMetrics](https://github.com/Lightning-AI/metrics) - Machine learning metrics for distributed, scalable PyTorch applications
+    * [Apex](https://github.com/NVIDIA/apex) - Tools for easy mixed precision and distributed training in Pytorch
+    * [HuggingFace Accelerate](https://github.com/huggingface/accelerate) - A simple way to train and use PyTorch models with multi-GPU, TPU, mixed-precision
+    * [PyTorch Metric Learning](https://github.com/KevinMusgrave/pytorch-metric-learning) - The easiest way to use deep metric learning in your application. Modular, flexible, and extensible, written in PyTorch
+    * [Auto-PyTorch](https://github.com/automl/Auto-PyTorch) - Automatic architecture search and hyperparameter optimization for PyTorch
+    * [torch-optimizer](https://github.com/jettify/pytorch-optimizer) - Collection of optimizers for PyTorch compatible with optim module
+    * [PyTorch Sparse](https://github.com/rusty1s/pytorch_sparse) - PyTorch Extension Library of Optimized Autograd Sparse Matrix Operations
+    * [PyTorch Scatter](https://github.com/rusty1s/pytorch_scatter) - PyTorch Extension Library of Optimized Scatter Operations
+    * [Torch-Struct](https://github.com/harvardnlp/pytorch-struct) - A library of tested, GPU implementations of core structured prediction algorithms for deep learning applications
+    * [higher](https://github.com/facebookresearch/higher) **(not actively updated)** - A pytorch library allowing users to obtain higher order gradients over losses spanning training loops rather than individual training steps
     </details>
 
 * [TensorFlow](https://github.com/tensorflow/tensorflow) - An open source deep learning framework by Google, with GPU support.
@@ -74,14 +83,20 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     * [TensorFlow Recommenders](https://github.com/tensorflow/recommenders) - A library for building recommender system models using TensorFlow.
     * [TensorFlow Ranking](https://github.com/tensorflow/ranking) - A library for Learning-to-Rank (LTR) techniques on the TensorFlow platform.
     * [TensorFlow Serving](https://github.com/tensorflow/serving) - A flexible, high-performance serving system for machine learning models based on TensorFlow
+    * [TFX](https://github.com/tensorflow/tfx) - An end-to-end platform for deploying production ML pipelines.
     * [TFDS](https://github.com/tensorflow/datasets) - A collection of datasets ready to use with TensorFlow and Jax
+    * [TensorFlow Addons](https://github.com/tensorflow/addons) - Useful extra functionality for TensorFlow 2.x maintained by SIG-addons
+    * [TensorFlow Transform](https://github.com/tensorflow/transform) - A library for preprocessing data with TensorFlow
     * [TensorFlow Model Garden](https://github.com/tensorflow/models) - Models and examples built with TensorFlow
+    * [TensorFlow Hub](https://github.com/tensorflow/hub) - A library for transfer learning by reusing parts of TensorFlow models
     * [TensorFlow.js](https://github.com/tensorflow/tfjs) - A WebGL accelerated JavaScript library for training and deploying ML models based on TensorFlow
-    * [Tensor2Tensor](https://github.com/tensorflow/tensor2tensor) **(no longer maintained)** - Library of deep learning models and datasets designed to make deep learning more accessible and accelerate ML research
+    * [TensorFlow Probability](https://github.com/tensorflow/probability) - Probabilistic reasoning and statistical analysis in TensorFlow
+    * [TensorFlow Model Optimization Toolkit](https://github.com/tensorflow/model-optimization) - A toolkit to optimize ML models for deployment for Keras and TensorFlow, including quantization and pruning
     * [TensorFlow Model Analysis](https://github.com/tensorflow/model-analysis) - A library for evaluating TensorFlow models
     * [Trax](https://github.com/google/trax) **(successor of Tensor2Tensor)** - Deep Learning with Clear Code and Speed
     * [tf_numpy](https://www.tensorflow.org/guide/tf_numpy) - A subset of the NumPy API implemented in TensorFlow
     * [TensorFlowOnSpark](https://github.com/yahoo/TensorFlowOnSpark) - Brings TensorFlow programs to Apache Spark clusters
+    * [Tensor2Tensor](https://github.com/tensorflow/tensor2tensor) **(no longer maintained)** - Library of deep learning models and datasets designed to make deep learning more accessible and accelerate ML research
     </details>
 
 * [MXNet](https://github.com/apache/incubator-mxnet) - An open source deep learning framework by Apache, with GPU support.
@@ -122,6 +137,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [fastai](https://github.com/fastai/fastai) - A high-level deep learning library based on PyTorch.
 
 * [Lightning](https://github.com/Lightning-AI/lightning) - A high-level deep learning library based on PyTorch.
+
+* [Lightning Flash](https://github.com/Lightning-AI/lightning-flash) - Your PyTorch AI Factory - Flash enables you to easily configure and run complex AI recipes for over 15 tasks across 7 data domains
+
+* [tinygrad](https://github.com/geohot/tinygrad) - A deep learning framework in between a pytorch and a karpathy/micrograd.
 
 * [ktrain](https://github.com/amaiya/ktrain) - A high-level deep learning library based on TensorFlow.
 
@@ -175,8 +194,6 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [NNI](https://github.com/microsoft/nni) - An open source AutoML toolkit for automate machine learning lifecycle, including feature engineering, neural architecture search, model compression and hyper-parameter tuning.
 
-* [Auto-PyTorch](https://github.com/automl/Auto-PyTorch) - Automatic architecture search and hyperparameter optimization for PyTorch.
-
 * [AutoKeras](https://github.com/keras-team/autokeras) - AutoML library for deep learning.
 
 * [KerasTuner](https://github.com/keras-team/keras-tuner) - An easy-to-use, scalable hyperparameter optimization framework that solves the pain points of hyperparameter search.
@@ -188,6 +205,12 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [explainerdashboard](https://github.com/oegedijk/explainerdashboard) - Quickly build Explainable AI dashboards that show the inner workings of so-called "blackbox" machine learning models.
 
 * [iNNvestigate](https://github.com/albermax/innvestigate) - A toolbox to innvestigate neural networks' predictions.
+
+* [Foolbox](https://github.com/bethgelab/foolbox) - A Python toolbox to create adversarial examples that fool neural networks in PyTorch, TensorFlow, and JAX.
+
+* [AdvBox](https://github.com/advboxes/AdvBox) - A toolbox to generate adversarial examples that fool neural networks in PaddlePaddle、PyTorch、Caffe2、MxNet、Keras、TensorFlow.
+
+* [Adversarial Robustness Toolbox](https://github.com/Trusted-AI/adversarial-robustness-toolbox) - Python Library for Machine Learning Security - Evasion, Poisoning, Extraction, Inference.
 
 * [Fairlearn](https://github.com/fairlearn/fairlearn) - A Python package to assess and improve fairness of machine learning models.
 
@@ -230,9 +253,19 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [scikit-learn](https://github.com/scikit-learn/scikit-learn) - Machine learning toolkit for Python.
   * <details open><summary>Related projects (click to expand):</summary>
 
+    * [imbalanced-learn](https://github.com/scikit-learn-contrib/imbalanced-learn) - A python package offering a number of re-sampling techniques commonly used in datasets showing strong between-class imbalance
+    * [category_encoders](https://github.com/scikit-learn-contrib/category_encoders) - A set of scikit-learn-style transformers for encoding categorical variables into numeric by means of different techniques
+    * [lightning](https://github.com/scikit-learn-contrib/lightning) - Large-scale linear classification, regression and ranking in Python
+    * [sklearn-pandas](https://github.com/scikit-learn-contrib/sklearn-pandas) - Pandas integration with sklearn
+    * [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan) - A high performance implementation of HDBSCAN clustering
+    * [metric-learn](https://github.com/scikit-learn-contrib/metric-learn) - Metric learning algorithms in Python
     * [scikit-optimize](https://github.com/scikit-optimize/scikit-optimize) - Sequential model-based optimization with a `scipy.optimize` interface
     * [scikit-image](https://github.com/scikit-image/scikit-image) - Image processing in Python
     * [auto-sklearn](https://github.com/automl/auto-sklearn) - An automated machine learning toolkit and a drop-in replacement for a scikit-learn estimator.
+    * [scikit-multilearn](https://github.com/scikit-multilearn/scikit-multilearn) - A Python module capable of performing multi-label learning tasks
+    * [scikit-lego](https://github.com/koaning/scikit-lego) - Extra blocks for scikit-learn pipelines.
+    * [scikit-opt](https://github.com/guofei9987/scikit-opt) - Genetic Algorithm, Particle Swarm Optimization, Simulated Annealing, Ant Colony Optimization Algorithm,Immune Algorithm, Artificial Fish Swarm Algorithm, Differential Evolution and TSP(Traveling salesman)
+    * [sklearn-porter](https://github.com/nok/sklearn-porter) - Transpile trained scikit-learn estimators to C, Java, JavaScript and others.
   </details>
 
 * [XGBoost](https://github.com/dmlc/xgboost) - Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library.
@@ -252,7 +285,21 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Flax](https://github.com/google/flax) - A high-performance neural network library and ecosystem for JAX that is designed for flexibility.
 
-* [sklearn-porter](https://github.com/nok/sklearn-porter) - Transpile trained scikit-learn estimators to C, Java, JavaScript and others.
+* [Equinox](https://github.com/patrick-kidger/equinox) - A JAX library based around a simple idea: represent parameterised functions (such as neural networks) as PyTrees.
+
+* [cuML](https://github.com/rapidsai/cuml) - A suite of libraries that implement machine learning algorithms and mathematical primitives functions that share compatible APIs with other RAPIDS projects.
+
+* [Mlxtend](https://github.com/rasbt/mlxtend) - A library of extension and helper modules for Python's data analysis and machine learning libraries.
+
+* [Annoy](https://github.com/spotify/annoy) - Approximate Nearest Neighbors in C++/Python optimized for memory usage and loading/saving to disk.
+
+* [Hnswlib](https://github.com/nmslib/hnswlib) - Header-only C++/python library for fast approximate nearest neighbors.
+
+* [NMSLIB](https://github.com/nmslib/nmslib) - Non-Metric Space Library (NMSLIB): An efficient similarity search library and a toolkit for evaluation of k-NN methods for generic non-metric spaces.
+
+* [ann-benchmarks](https://github.com/erikbern/ann-benchmarks) - Benchmarks of approximate nearest neighbor libraries in Python.
+
+* [FilterPy](https://github.com/rlabbe/filterpy) - Python Kalman filtering and optimal estimation library.
 
 * [igel](https://github.com/nidhaloff/igel) - A delightful machine learning tool that allows you to train, test, and use models without writing code.
 
@@ -474,6 +521,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Language Interpretability Tool](https://github.com/PAIR-code/lit) - Interactively analyze NLP models for model understanding in an extensible and framework agnostic interface.
 
+* [TextAttack](https://github.com/QData/TextAttack) - A Python framework for adversarial attacks, data augmentation, and model training in NLP.
+
 * [CheckList](https://github.com/marcotcr/checklist) - Behavioral Testing of NLP models with CheckList.
 
 * [Magenta](https://github.com/magenta/magenta) **(no longer maintained)** - Music and Art Generation with Machine Intelligence.
@@ -544,6 +593,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Jraph](https://github.com/deepmind/jraph) - A Graph Neural Network Library in Jax.
 
+* [cuGraph](https://github.com/rapidsai/cugraph) - A collection of GPU accelerated graph algorithms that process data found in GPU DataFrames (cuDF).
+
 * [GraphEmbedding](https://github.com/shenweichen/GraphEmbedding) - Implementation and experiments of graph embedding algorithms.
 
 * [PyTorch-BigGraph](https://github.com/facebookresearch/PyTorch-BigGraph) **(not actively updated)** - Generate embeddings from large-scale graph-structured data,  based on PyTorch.
@@ -606,6 +657,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [TF Quant Finance](https://github.com/google/tf-quant-finance) - High-performance TensorFlow library for quantitative finance.
 
+* [Pandas TA](https://github.com/twopirllc/pandas-ta) - An easy to use library that leverages the Pandas package with more than 130 Indicators and Utility functions and more than 60 TA Lib Candlestick Patterns.
+
 * [pyts](https://github.com/johannfaouzi/pyts) **(not actively updated)** - A Python package for time series classification.
 
 * [CryptoSignal](https://github.com/CryptoSignal/Crypto-Signal) **(not actively updated)** - A command line tool that automates your crypto currency Technical Analysis (TA).
@@ -618,7 +671,13 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [SciPy](https://github.com/scipy/scipy) - An open-source software for mathematics, science, and engineering in Python.
 
+* [ArrayFire](https://github.com/arrayfire/arrayfire) - A general-purpose tensor library that simplifies the process of software development for the parallel architectures found in CPUs, GPUs, and other hardware acceleration devices
+
 * [CuPy](https://github.com/cupy/cupy) - A NumPy/SciPy-compatible array library for GPU-accelerated computing with Python.
+
+* [PyCUDA](https://github.com/inducer/pycuda) - Pythonic Access to CUDA, with Arrays and Algorithms.
+
+* [torchdiffeq](https://github.com/rtqichen/torchdiffeq) - Differentiable ordinary differential equation (ODE) solvers with full GPU support and O(1)-memory backpropagation.
 
 * [Statsmodels](https://github.com/statsmodels/statsmodels) - Statistical modeling and econometrics in Python.
 
@@ -628,7 +687,29 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [einops](https://github.com/arogozhnikov/einops) - A tensor operation library for NumPy, PyTorch, TensorFlow and JAX.
 
+* [Milvus](https://github.com/milvus-io/milvus) - An open-source vector database built to power embedding similarity search and AI applications.
+
+* [Faiss](https://github.com/facebookresearch/faiss) - A library for efficient similarity search and clustering of dense vectors.
+
 * [shap](https://github.com/slundberg/shap) - A game theoretic approach to explain the output of any machine learning model.
+
+* [Pyro](https://github.com/pyro-ppl/pyro) - Deep universal probabilistic programming with Python and PyTorch.
+
+* [GPyTorch](https://github.com/cornellius-gp/gpytorch) - A highly efficient and modular implementation of Gaussian Processes in PyTorch.
+
+* [PyMC](https://github.com/pymc-devs/pymc) - Probabilistic Programming in Python: Bayesian Modeling and Probabilistic Machine Learning with Aesara.
+
+* [hmmlearn](https://github.com/hmmlearn/hmmlearn) - Hidden Markov Models in Python, with scikit-learn like API.
+
+* [emcee](https://github.com/dfm/emcee) - The Python ensemble sampling toolkit for affine-invariant Markov chain Monte Carlo (MCMC).
+
+* [pgmpy](https://github.com/pgmpy/pgmpy) - A python library for working with Probabilistic Graphical Models.
+
+* [pomegranate](https://github.com/jmschrei/pomegranate) - Fast, flexible and easy to use probabilistic modelling in Python.
+
+* [Orbit](https://github.com/uber/orbit) - A Python package for Bayesian forecasting with object-oriented design and probabilistic models under the hood.
+
+* [GPflow](https://github.com/GPflow/GPflow) - Gaussian processes in TensorFlow.
 
 * [ArviZ](https://github.com/arviz-devs/arviz) - A Python package for exploratory analysis of Bayesian models.
 
@@ -637,6 +718,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [UMAP](https://github.com/lmcinnes/umap) - Uniform Manifold Approximation and Projection, a dimension reduction technique that can be used for visualisation similarly to t-SNE.
 
 ## Data Processing
+
+* [cuDF](https://github.com/rapidsai/cudf) - GPU DataFrame Library.
+
+* [DALI](https://github.com/NVIDIA/DALI) - A library for data loading and pre-processing to accelerate deep learning applications.
 
 * [Pillow](https://github.com/python-pillow/Pillow) - The friendly PIL fork (Python Imaging Library).
 
@@ -699,6 +784,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [stockstats](https://github.com/jealous/stockstats) - Supply a wrapper ``StockDataFrame`` based on the ``pandas.DataFrame`` with inline stock statistics/indicators support.
 
 * [Featuretools](https://github.com/alteryx/featuretools) - An open source python library for automated feature engineering.
+
+* [fancyimpute](https://github.com/iskandr/fancyimpute) **(not actively updated)** - A variety of matrix completion and imputation algorithms implemented in Python.
 
 ## Data Visualization
 
@@ -806,5 +893,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Scroll-Reverser](https://github.com/pilotmoon/Scroll-Reverser) - Reverses the direction of macOS scrolling, with independent settings for trackpads and mice.
 
 ## Cross-Platform
+
+* [gpustat](https://github.com/wookayin/gpustat) - A simple command-line utility for querying and monitoring GPU status.
 
 * [LANDrop](https://github.com/LANDrop/LANDrop) - A cross-platform tool that you can use to conveniently transfer photos, videos, and other types of files to other devices on the same local network.
