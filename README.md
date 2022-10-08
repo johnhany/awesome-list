@@ -2,7 +2,8 @@
 A list of useful stuff in Machine Learning, Computer Graphics, Software Development, Mathematics, ...
 
 > References:
-> [github.com/ml-tooling/best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python)
+> - [github.com/ml-tooling/best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python)
+> - [github.com/ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
 
 ---
 
@@ -10,9 +11,28 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 - [Machine Learning](#machine-learning)
   - [Deep Learning Framework](#deep-learning-framework)
+    - [High-Level DL APIs](#high-level-dl-apis)
+    - [Deployment & Distribution](#deployment--distribution)
+    - [Auto ML & Hyperparameter Optimization](#auto-ml--hyperparameter-optimization)
+    - [Interpretability & Adversarial Training](#interpretability--adversarial-training)
+    - [Anomaly Detection & Others](#anomaly-detection--others)
   - [Machine Learning Framework](#machine-learning-framework)
+    - [General Purpose Framework](#general-purpose-framework)
+    - [Nearest Neighbors & Similarity](#nearest-neighbors--similarity)
+    - [Hyperparameter Search & Gradient-Free Optimization](#hyperparameter-search--gradient-free-optimization)
+    - [Experiment Management](#experiment-management)
+    - [Model Interpretation](#model-interpretation)
+    - [Anomaly Detection](#anomaly-detection)
   - [Computer Vision](#computer-vision)
+    - [General Purpose CV](#general-purpose-cv)
+    - [Classification & Detection & Tracking](#classification--detection--tracking)
+    - [OCR](#ocr)
+    - [Image / Video Generation](#image--video-generation)
   - [Natural Language Processing](#natural-language-processing)
+    - [General Purpose NLP](#general-purpose-nlp)
+    - [Conversation & Translation](#conversation--translation)
+    - [Speech & Audio](#speech--audio)
+    - [Others](#others)
   - [Reinforcement Learning](#reinforcement-learning)
   - [Graph](#graph)
   - [Causal Inference](#causal-inference)
@@ -20,12 +40,27 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
   - [Time-Series & Financial](#time-series--financial)
   - [Other Machine Learning Applications](#other-machine-learning-applications)
   - [Linear Algebra / Statistics Toolkit](#linear-algebra--statistics-toolkit)
+    - [General Purpose Tensor Library](#general-purpose-tensor-library)
+    - [Tensor Similarity & Dimension Reduction](#tensor-similarity--dimension-reduction)
+    - [Statistical Toolkit](#statistical-toolkit)
+    - [Others](#others-1)
   - [Data Processing](#data-processing)
+    - [Data Representation](#data-representation)
+    - [Data Pre-processing & Loading](#data-pre-processing--loading)
+    - [Data Similarity](#data-similarity)
+    - [Data Management](#data-management)
   - [Data Visualization](#data-visualization)
   - [Machine Learning Tutorials](#machine-learning-tutorials)
 - [Full-Stack Development](#full-stack-development)
+  - [DevOps](#devops)
   - [Web Development](#web-development)
+  - [Process, Thread & Coroutine](#process-thread--coroutine)
   - [Data Management & Processing](#data-management--processing)
+  - [Data Format & I/O](#data-format--io)
+    - [For Python](#for-python)
+  - [Design Pattern](#design-pattern)
+  - [Programming Algorithm](#programming-algorithm)
+  - [Programming Language Tutorials](#programming-language-tutorials)
 - [Academic](#academic)
   - [Mathematics](#mathematics)
   - [Paper Reading](#paper-reading)
@@ -39,10 +74,12 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 ## Deep Learning Framework
 
+### High-Level DL APIs
+
 * [PyTorch](https://github.com/pytorch/pytorch) - An open source deep learning framework by Facebook, with GPU and dynamic graph support.
   * Supported platform: *Linux, Windows, MacOS, Android, iOS*
   * Language API: *Python, C++, Java*
-  * <details open><summary>Related projects (click to expand):</summary>
+  * <details open><summary>Related projects:</summary>
 
     * [TorchVision](https://github.com/pytorch/vision) - Datasets, Transforms and Models specific to Computer Vision for PyTorch
     * [TorchText](https://github.com/pytorch/text) - Data loaders and abstractions for text and NLP for PyTorch
@@ -71,7 +108,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [TensorFlow](https://github.com/tensorflow/tensorflow) - An open source deep learning framework by Google, with GPU support.
   * Supported platform: *Linux, Windows, MacOS, Android, iOS, Raspberry Pi, Web*
   * Language API: *Python, C++, Java, JavaScript*
-  * <details open><summary>Related projects (click to expand):</summary>
+  * <details open><summary>Related projects:</summary>
 
     * [TensorBoard](https://github.com/tensorflow/tensorboard) - TensorFlow's Visualization Toolkit
     * [TensorFlow Text](https://github.com/tensorflow/text) - A collection of text related classes and ops for TensorFlow
@@ -101,7 +138,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [PaddlePaddle](https://github.com/PaddlePaddle/Paddle) - An open source deep learning framework by Baidu, with GPU support.
   * Supported platform: *Linux, Windows, MacOS, Android, iOS, Web*
   * Language API: *Python, C++, Java, JavaScript*
-  * <details open><summary>Related projects (click to expand):</summary>
+  * <details open><summary>Related projects:</summary>
 
     * [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) - Multilingual OCR toolkits based on PaddlePaddle
     * [PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection) - Object detection toolkit based on PaddlePaddle
@@ -149,6 +186,28 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Haiku](https://github.com/deepmind/dm-haiku) - A high-level deep learning library based on JAX.
 
+* [CNTK](https://github.com/microsoft/CNTK) **(not actively updated)** - An open source deep learning framework by Microsoft, with GPU support.
+  * Supported platform: *Linux, Windows*
+  * Language API: *Python, C++, Java, C#, .Net*
+
+* [DyNet](https://github.com/clab/dynet) **(not actively updated)** - A C++ deep learning library by CMU.
+  * Supported platform: *Linux, Windows, MacOS*
+  * Language API: *C++, Python*
+
+* [Chainer](https://github.com/chainer/chainer) **(not actively updated)** - A flexible framework of neural networks for deep learning.
+
+* [skorch](https://github.com/skorch-dev/skorch) **(not actively updated)** - A scikit-learn compatible neural network library based on PyTorch.
+
+* [MMF](https://github.com/facebookresearch/mmf) **(not actively updated)** - A modular framework for vision and language multimodal research by Facebook AI Research, based on PyTorch.
+
+* [Tensorpack](https://github.com/tensorpack/tensorpack) **(not actively updated)** - A high-level deep learning library based on TensorFlow.
+
+* [Sonnet](https://github.com/deepmind/sonnet) **(not actively updated)** - A high-level deep learning library based on TensorFlow.
+
+* [Ivy](https://github.com/unifyai/ivy) **(not actively updated)** - A high-level deep learning library that unifies NumPy, PyTorch, TensorFlow, MXNet and JAX.
+
+### Deployment & Distribution
+
 * [Triton](https://github.com/openai/triton) - A language and compiler for writing highly efficient custom Deep-Learning primitives.
 
 * [Hummingbird](https://github.com/microsoft/hummingbird) - A library for compiling trained traditional ML models into tensor computations.
@@ -189,6 +248,16 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Nebullvm](https://github.com/nebuly-ai/nebullvm) - An open-source tool designed to speed up AI inference in just a few lines of code.
 
+* [Turi Create](https://github.com/apple/turicreate) **(not actively updated)** - A machine learning library for deployment on MacOS/iOS.
+
+* [Apache SINGA](https://github.com/apache/singa) **(not actively updated)** - A distributed deep learning platform.
+
+* [BytePS](https://github.com/bytedance/byteps) **(not actively updated)** - A high performance and generic framework for distributed DNN training.
+
+* [MMdnn](https://github.com/microsoft/MMdnn) **(not actively updated)** - MMdnn is a set of tools to help users inter-operate among different deep learning frameworks.
+
+### Auto ML & Hyperparameter Optimization
+
 * [NNI](https://github.com/microsoft/nni) - An open source AutoML toolkit for automate machine learning lifecycle, including feature engineering, neural architecture search, model compression and hyper-parameter tuning.
 
 * [AutoKeras](https://github.com/keras-team/autokeras) - AutoML library for deep learning.
@@ -196,6 +265,12 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [KerasTuner](https://github.com/keras-team/keras-tuner) - An easy-to-use, scalable hyperparameter optimization framework that solves the pain points of hyperparameter search.
 
 * [Talos](https://github.com/autonomio/talos) - Hyperparameter Optimization for TensorFlow, Keras and PyTorch.
+
+* [Hyperas](https://github.com/maxpumperla/hyperas) **(not actively updated)** - A very simple wrapper for convenient hyperparameter optimization for Keras.
+
+* [Model Search](https://github.com/google/model_search) **(not actively updated)** - A framework that implements AutoML algorithms for model architecture search at scale.
+
+### Interpretability & Adversarial Training
 
 * [AI Explainability 360](https://github.com/Trusted-AI/AIX360) - An open-source library that supports interpretability and explainability of datasets and machine learning models.
 
@@ -209,6 +284,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Adversarial Robustness Toolbox](https://github.com/Trusted-AI/adversarial-robustness-toolbox) - Python Library for Machine Learning Security - Evasion, Poisoning, Extraction, Inference.
 
+### Anomaly Detection & Others
+
 * [Anomalib](https://github.com/openvinotoolkit/anomalib) - An anomaly detection library comprising state-of-the-art algorithms and features such as experiment management, hyper-parameter optimization, and edge inference.
 
 * [Gradio](https://github.com/gradio-app/gradio) - An open-source Python library that is used to build machine learning and data science demos and web applications.
@@ -219,42 +296,12 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [AI Fairness 360](https://github.com/Trusted-AI/AIF360) - A comprehensive set of fairness metrics for datasets and machine learning models, explanations for these metrics, and algorithms to mitigate bias in datasets and models.
 
-* [CNTK](https://github.com/microsoft/CNTK) **(not actively updated)** - An open source deep learning framework by Microsoft, with GPU support.
-  * Supported platform: *Linux, Windows*
-  * Language API: *Python, C++, Java, C#, .Net*
-
-* [DyNet](https://github.com/clab/dynet) **(not actively updated)** - A C++ deep learning library by CMU.
-  * Supported platform: *Linux, Windows, MacOS*
-  * Language API: *C++, Python*
-
-* [Chainer](https://github.com/chainer/chainer) **(not actively updated)** - A flexible framework of neural networks for deep learning.
-
-* [skorch](https://github.com/skorch-dev/skorch) **(not actively updated)** - A scikit-learn compatible neural network library based on PyTorch.
-
-* [MMF](https://github.com/facebookresearch/mmf) **(not actively updated)** - A modular framework for vision and language multimodal research by Facebook AI Research, based on PyTorch.
-
-* [Tensorpack](https://github.com/tensorpack/tensorpack) **(not actively updated)** - A high-level deep learning library based on TensorFlow.
-
-* [Sonnet](https://github.com/deepmind/sonnet) **(not actively updated)** - A high-level deep learning library based on TensorFlow.
-
-* [Ivy](https://github.com/unifyai/ivy) **(not actively updated)** - A high-level deep learning library that unifies NumPy, PyTorch, TensorFlow, MXNet and JAX.
-
-* [Turi Create](https://github.com/apple/turicreate) **(not actively updated)** - A machine learning library for deployment on MacOS/iOS.
-
-* [Apache SINGA](https://github.com/apache/singa) **(not actively updated)** - A distributed deep learning platform.
-
-* [BytePS](https://github.com/bytedance/byteps) **(not actively updated)** - A high performance and generic framework for distributed DNN training.
-
-* [MMdnn](https://github.com/microsoft/MMdnn) **(not actively updated)** - MMdnn is a set of tools to help users inter-operate among different deep learning frameworks.
-
-* [Hyperas](https://github.com/maxpumperla/hyperas) **(not actively updated)** - A very simple wrapper for convenient hyperparameter optimization for Keras.
-
-* [Model Search](https://github.com/google/model_search) **(not actively updated)** - A framework that implements AutoML algorithms for model architecture search at scale.
-
 ## Machine Learning Framework
 
+### General Purpose Framework
+
 * [scikit-learn](https://github.com/scikit-learn/scikit-learn) - Machine learning toolkit for Python.
-  * <details open><summary>Related projects (click to expand):</summary>
+  * <details open><summary>Related projects:</summary>
 
     * [imbalanced-learn](https://github.com/scikit-learn-contrib/imbalanced-learn) - A python package offering a number of re-sampling techniques commonly used in datasets showing strong between-class imbalance
     * [category_encoders](https://github.com/scikit-learn-contrib/category_encoders) - A set of scikit-learn-style transformers for encoding categorical variables into numeric by means of different techniques
@@ -298,6 +345,33 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [River](https://github.com/online-ml/river) - A Python library for online machine learning.
 
+* [FilterPy](https://github.com/rlabbe/filterpy) - Python Kalman filtering and optimal estimation library.
+
+* [igel](https://github.com/nidhaloff/igel) - A delightful machine learning tool that allows you to train, test, and use models without writing code.
+
+* [fklearn](https://github.com/nubank/fklearn) - A machine learning library that uses functional programming principles.
+
+* [SynapseML](https://github.com/microsoft/SynapseML) - An open-source library that simplifies the creation of massively scalable machine learning pipelines.
+
+* [Dask](https://github.com/dask/dask) - A flexible parallel computing library for NumPy, Pandas and Scikit-Learn.
+  * <details open><summary>Related projects:</summary>
+
+    * [Distributed](https://github.com/dask/distributed) - A distributed task scheduler for Dask
+  </details>
+
+* [H2O](https://github.com/h2oai/h2o-3) - An in-memory platform for distributed, scalable machine learning.
+
+* [mlpack](https://github.com/mlpack/mlpack) **(not actively updated)** - A header-only C++ machine learning library.
+  * Language API: *C++, Python, R, Julia, Go*
+
+* [xLearn](https://github.com/aksnzhy/xlearn) **(not actively updated)** - A C++ machine learning library for linear model (LR), factorization machines (FM), and field-aware factorization machines (FFM).
+
+* [ThunderGBM](https://github.com/Xtra-Computing/thundergbm) **(not actively updated)** - Fast GBDTs and Random Forests on GPUs.
+
+* [ThunderSVM](https://github.com/Xtra-Computing/thundersvm) **(not actively updated)** - A Fast SVM Library on GPUs and CPUs.
+
+### Nearest Neighbors & Similarity
+
 * [Annoy](https://github.com/spotify/annoy) - Approximate Nearest Neighbors in C++/Python optimized for memory usage and loading/saving to disk.
 
 * [Hnswlib](https://github.com/nmslib/hnswlib) - Header-only C++/python library for fast approximate nearest neighbors.
@@ -308,21 +382,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [kmodes](https://github.com/nicodv/kmodes) - Python implementations of the k-modes and k-prototypes clustering algorithms, for clustering categorical data.
 
-* [FilterPy](https://github.com/rlabbe/filterpy) - Python Kalman filtering and optimal estimation library.
-
-* [igel](https://github.com/nidhaloff/igel) - A delightful machine learning tool that allows you to train, test, and use models without writing code.
-
-* [fklearn](https://github.com/nubank/fklearn) - A machine learning library that uses functional programming principles.
-
-* [SynapseML](https://github.com/microsoft/SynapseML) - An open-source library that simplifies the creation of massively scalable machine learning pipelines.
-
-* [Dask](https://github.com/dask/dask) - A flexible parallel computing library for NumPy, Pandas and Scikit-Learn.
-  * <details open><summary>Related projects (click to expand):</summary>
-
-    * [Distributed](https://github.com/dask/distributed) - A distributed task scheduler for Dask
-  </details>
-
-* [H2O](https://github.com/h2oai/h2o-3) - An in-memory platform for distributed, scalable machine learning.
+### Hyperparameter Search & Gradient-Free Optimization
 
 * [Optuna](https://github.com/optuna/optuna) - An automatic hyperparameter optimization software framework, particularly designed for machine learning.
 
@@ -335,6 +395,14 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [MLJAR](https://github.com/mljar/mljar-supervised) - Python package for AutoML on Tabular Data with Feature Engineering, Hyper-Parameters Tuning, Explanations and Automatic Documentation.
 
 * [gplearn](https://github.com/trevorstephens/gplearn) - Genetic Programming in Python, with a scikit-learn inspired API.
+
+* [BayesianOptimization](https://github.com/fmfn/BayesianOptimization) **(not actively updated)** - A Python implementation of global optimization with gaussian processes.
+
+* [Hyperopt](https://github.com/hyperopt/hyperopt) **(not actively updated)** - Distributed Asynchronous Hyperparameter Optimization in Python.
+
+* [Dragonfly](https://github.com/dragonfly/dragonfly) **(not actively updated)** - An open source python library for scalable Bayesian optimization.
+
+### Experiment Management
 
 * [MLflow](https://github.com/mlflow/mlflow) - A platform to streamline machine learning development, including tracking experiments, packaging code into reproducible runs, and sharing and deploying models.
 
@@ -354,6 +422,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Yellowbrick](https://github.com/DistrictDataLabs/yellowbrick) - Visual analysis and diagnostic tools to facilitate machine learning model selection.
 
+### Model Interpretation
+
 * [dtreeviz](https://github.com/parrt/dtreeviz) - A python library for decision tree visualization and model interpretation.
 
 * [InterpretML](https://github.com/interpretml/interpret) - An open-source package that incorporates state-of-the-art machine learning interpretability techniques.
@@ -364,41 +434,25 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [PyCM](https://github.com/sepandhaghighi/pycm) - Multi-class confusion matrix library in Python.
 
+### Anomaly Detection
+
 * [PyOD](https://github.com/yzhao062/pyod) - A Comprehensive and Scalable Python Library for Outlier Detection (Anomaly Detection).
 
 * [Alibi Detect](https://github.com/SeldonIO/alibi-detect) - Algorithms for outlier, adversarial and drift detection.
 
-* [mlpack](https://github.com/mlpack/mlpack) **(not actively updated)** - A header-only C++ machine learning library.
-  * Language API: *C++, Python, R, Julia, Go*
-
-* [xLearn](https://github.com/aksnzhy/xlearn) **(not actively updated)** - A C++ machine learning library for linear model (LR), factorization machines (FM), and field-aware factorization machines (FFM).
-
-* [ThunderGBM](https://github.com/Xtra-Computing/thundergbm) **(not actively updated)** - Fast GBDTs and Random Forests on GPUs.
-
-* [ThunderSVM](https://github.com/Xtra-Computing/thundersvm) **(not actively updated)** - A Fast SVM Library on GPUs and CPUs.
-
-* [BayesianOptimization](https://github.com/fmfn/BayesianOptimization) **(not actively updated)** - A Python implementation of global optimization with gaussian processes.
-
-* [Hyperopt](https://github.com/hyperopt/hyperopt) **(not actively updated)** - Distributed Asynchronous Hyperparameter Optimization in Python.
-
-* [Dragonfly](https://github.com/dragonfly/dragonfly) **(not actively updated)** - An open source python library for scalable Bayesian optimisation.
-
 ## Computer Vision
 
-* [OpenCV](https://github.com/opencv/opencv) - Open Source Computer Vision Library.
-  * <details open><summary>Related projects (click to expand):</summary>
+### General Purpose CV
 
+* [OpenCV](https://github.com/opencv/opencv) - Open Source Computer Vision Library.
+  * <details open><summary>Related projects:</summary>
+
+    * [opencv-python](https://github.com/opencv/opencv-python) - Pre-built CPU-only OpenCV packages for Python.
     * [opencv_contrib](https://github.com/opencv/opencv_contrib) - Repository for OpenCV's extra modules.
   </details>
-  
-* [opencv-python](https://github.com/opencv/opencv-python) - Pre-built CPU-only OpenCV packages for Python.
-
-* [Detectron](https://github.com/facebookresearch/Detectron/) **(no longer maintained)** - A research platform for object detection research, implementing popular algorithms by Facebook, based on Caffe2.
-
-* [Detectron2](https://github.com/facebookresearch/detectron2) **(successor of Detectron)** - A platform for object detection, segmentation and other visual recognition tasks, based on PyTorch.
 
 * [OMMCV](https://github.com/open-mmlab/mmcv) - OpenMMLab Computer Vision Foundation.
-  * <details open><summary>Related projects (click to expand):</summary>
+  * <details open><summary>Related projects:</summary>
 
     * [MMClassification](https://github.com/open-mmlab/mmclassification) - OpenMMLab Image Classification Toolbox and Benchmark
     * [MMDetection](https://github.com/open-mmlab/mmdetection) - OpenMMLab Detection Toolbox and Benchmark
@@ -414,11 +468,39 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     * [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) - OpenPCDet Toolbox for LiDAR-based 3D Object Detection
   </details>
 
+* [Lightly](https://github.com/lightly-ai/lightly) - A computer vision framework for self-supervised learning, based on PyTorch.
+
+* [GluonCV](https://github.com/dmlc/gluon-cv) - A high-level computer vision library for PyTorch and MXNet.
+
+* [Scenic](https://github.com/google-research/scenic) - A codebase with a focus on research around attention-based models for computer vision, based on JAX and Flax.
+
+* [Kornia](https://github.com/kornia/kornia) - Open source differentiable computer vision library, based on PyTorch.
+
+* [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) - A collection of CV models, scripts, pretrained weights, based on PyTorch.
+
+* [vit-pytorch](https://github.com/lucidrains/vit-pytorch) - A collection of Vision Transformer implementations, based on PyTorch.
+
+* [vit-tensorflow](https://github.com/taki0112/vit-tensorflow) - A collection of Vision Transformer implementations, based on TensorFlow.
+
+* [Pillow](https://github.com/python-pillow/Pillow) - The friendly PIL fork (Python Imaging Library).
+
+* [Imageio](https://github.com/imageio/imageio) - Python library for reading and writing image data.
+
+* [MoviePy](https://github.com/Zulko/moviepy) - Video editing with Python.
+
+* [Wand](https://github.com/emcconville/wand) - The ctypes-based simple ImageMagick binding for Python.
+
+* [VidGear](https://github.com/abhiTronix/vidgear) - A High-performance cross-platform Video Processing Python framework powerpacked with unique trailblazing features.
+
+### Classification & Detection & Tracking
+
+* [Detectron](https://github.com/facebookresearch/Detectron/) **(no longer maintained)** - A research platform for object detection research, implementing popular algorithms by Facebook, based on Caffe2.
+
+* [Detectron2](https://github.com/facebookresearch/detectron2) **(successor of Detectron)** - A platform for object detection, segmentation and other visual recognition tasks, based on PyTorch.
+
 * [Norfair](https://github.com/tryolabs/norfair) - Lightweight Python library for adding real-time multi-object tracking to any detector.
 
 * [PyTorchVideo](https://github.com/facebookresearch/pytorchvideo) - A deep learning library for video understanding research, based on PyTorch.
-
-* [Lightly](https://github.com/lightly-ai/lightly) - A computer vision framework for self-supervised learning, based on PyTorch.
 
 * [ClassyVision](https://github.com/facebookresearch/ClassyVision) - An end-to-end framework for image and video classification, based on PyTorch.
 
@@ -428,23 +510,15 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [SAHI](https://github.com/obss/sahi) - Platform agnostic sliced/tiled inference + interactive ui + error analysis plots for object detection and instance segmentation.
 
-* [GluonCV](https://github.com/dmlc/gluon-cv) - A high-level computer vision library for PyTorch and MXNet.
-
 * [InsightFace](https://github.com/deepinsight/insightface) - An open source 2D&3D deep face analysis toolbox, based on PyTorch and MXNet.
-
-* [Scenic](https://github.com/google-research/scenic) - A codebase with a focus on research around attention-based models for computer vision, based on JAX and Flax.
 
 * [Deepface](https://github.com/serengil/deepface) - A Lightweight Face Recognition and Facial Attribute Analysis (Age, Gender, Emotion and Race) Library for Python.
 
-* [Kornia](https://github.com/kornia/kornia) - Open source differentiable computer vision library, based on PyTorch.
+* [segmentation_models](https://github.com/qubvel/segmentation_models) **(not actively updated)** - Python library with Neural Networks for Image Segmentation based on Keras and TensorFlow.
 
-* [Kubric](https://github.com/google-research/kubric) - A data generation pipeline for creating semi-realistic synthetic multi-object videos with rich annotations such as instance segmentation masks, depth maps, and optical flow.
+* [Face Recognition](https://github.com/ageitgey/face_recognition) **(not actively updated)** - A facial recognition api for Python and the command line.
 
-* [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) - A collection of CV models, scripts, pretrained weights, based on PyTorch.
-
-* [vit-pytorch](https://github.com/lucidrains/vit-pytorch) - A collection of Vision Transformer implementations, based on PyTorch.
-
-* [vit-tensorflow](https://github.com/taki0112/vit-tensorflow) - A collection of Vision Transformer implementations, based on TensorFlow.
+### OCR
 
 * [EasyOCR](https://github.com/JaidedAI/EasyOCR) - Ready-to-use OCR with 80+ supported languages and all popular writing scripts.
 
@@ -456,15 +530,17 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [LayoutParser](https://github.com/Layout-Parser/layout-parser) - A Unified Toolkit for Deep Learning Based Document Image Analysis, based on Detectron2.
 
-* [benchmark_VAE](https://github.com/clementchadebec/benchmark_VAE) - Implements some of the most common (Variational) Autoencoder models under a unified implementation.
-
 * [pdftabextract](https://github.com/WZBSocialScienceCenter/pdftabextract) **(no longer maintained)** - A set of tools for extracting tables from PDF files helping to do data mining on (OCR-processed) scanned documents.
 
-* [segmentation_models](https://github.com/qubvel/segmentation_models) **(not actively updated)** - Python library with Neural Networks for Image Segmentation based on Keras and TensorFlow.
+### Image / Video Generation
 
-* [Face Recognition](https://github.com/ageitgey/face_recognition) **(not actively updated)** - A facial recognition api for Python and the command line.
+* [Kubric](https://github.com/google-research/kubric) - A data generation pipeline for creating semi-realistic synthetic multi-object videos with rich annotations such as instance segmentation masks, depth maps, and optical flow.
+
+* [benchmark_VAE](https://github.com/clementchadebec/benchmark_VAE) - Implements some of the most common (Variational) Autoencoder models under a unified implementation.
 
 ## Natural Language Processing
+
+### General Purpose NLP
 
 * [HuggingFace Transformers](https://github.com/huggingface/transformers) - A high-level machine learning library for text, images and audio data, with support for Pytorch, TensorFlow and JAX.
 
@@ -494,22 +570,6 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [ESPnet](https://github.com/espnet/espnet) - An end-to-end speech processing toolkit covering end-to-end speech recognition, text-to-speech, speech translation, speech enhancement, speaker diarization, spoken language understanding, based on PyTorch.
 
-* [SpeechBrain](https://github.com/speechbrain/speechbrain) - An open-source and all-in-one conversational AI toolkit based on PyTorch.
-
-* [NeMo](https://github.com/NVIDIA/NeMo) - A toolkit for conversational AI, based on PyTorch.
-
-* [Sockeye](https://github.com/awslabs/sockeye) - An open-source sequence-to-sequence framework for Neural Machine Translation, based on PyTorch.
-
-* [DeepPavlov](https://github.com/deeppavlov/DeepPavlov) - An open-source conversational AI library built on TensorFlow, Keras and PyTorch.
-
-* [Spleeter](https://github.com/deezer/spleeter) - A source separation library with pretrained models, based on TensorFlow.
-
-* [TTS](https://github.com/coqui-ai/TTS) - A library for advanced Text-to-Speech generation.
-
-* [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis) - A Python library for audio feature extraction, classification, segmentation and applications.
-
-* [Porcupine](https://github.com/Picovoice/porcupine) - On-device wake word detection powered by deep learning.
-
 * [NLP Architect](https://github.com/IntelLabs/nlp-architect) - A Deep Learning NLP/NLU library by Intel AI Lab, based on PyTorch and TensorFlow.
 
 * [LightSeq](https://github.com/bytedance/lightseq) - A high performance training and inference library for sequence processing and generation implemented in CUDA, for Fairseq and HuggingFace Transformers.
@@ -518,39 +578,11 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Rubrix](https://github.com/recognai/rubrix) - A production-ready Python framework for exploring, annotating, and managing data in NLP projects.
 
-* [OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py) - The PyTorch version of the OpenNMT project, an open-source neural machine translation framework.
-
-* [OpenNMT-tf](https://github.com/OpenNMT/OpenNMT-tf) - The TensorFlow version of the OpenNMT project, an open-source neural machine translation framework.
-
 * [Gensim](https://github.com/RaRe-Technologies/gensim) - A Python library for topic modelling, document indexing and similarity retrieval with large corpora, based on NumPy and SciPy.
 
 * [CLTK](https://github.com/cltk/cltk) - A Python library offering natural language processing for pre-modern languages.
 
-* [Rasa](https://github.com/RasaHQ/rasa) - Open source machine learning framework to automate text- and voice-based conversations.
-
-* [SentencePiece](https://github.com/google/sentencepiece) - Unsupervised text tokenizer for Neural Network-based text generation.
-
-* [subword-nmt](https://github.com/rsennrich/subword-nmt) - Unsupervised Word Segmentation for Neural Machine Translation and Text Generation.
-
 * [OpenNRE](https://github.com/thunlp/OpenNRE) - An open-source and extensible toolkit that provides a unified framework to implement relation extraction models.
-
-* [sumy](https://github.com/miso-belica/sumy) - Module for automatic summarization of text documents and HTML pages.
-
-* [OpenPrompt](https://github.com/thunlp/OpenPrompt) - An Open-Source Framework for Prompt-Learning.
-
-* [Language Interpretability Tool](https://github.com/PAIR-code/lit) - Interactively analyze NLP models for model understanding in an extensible and framework agnostic interface.
-
-* [TextAttack](https://github.com/QData/TextAttack) - A Python framework for adversarial attacks, data augmentation, and model training in NLP.
-
-* [CheckList](https://github.com/marcotcr/checklist) - Behavioral Testing of NLP models with CheckList.
-
-* [Magenta](https://github.com/magenta/magenta) **(no longer maintained)** - Music and Art Generation with Machine Intelligence.
-
-* [FARM](https://github.com/deepset-ai/FARM) **(not actively updated)** - Fast & easy transfer learning for NLP, which focuses on Question Answering.
-
-* [Haystack](https://github.com/deepset-ai/haystack) **(successor of FARM)** - A high-level natural language processing library for deployment and production, based on PyTorch and HuggingFace Transformers.
-
-* [SpeechRecognition](https://github.com/Uberi/speech_recognition) **(not actively updated)** - Library for performing speech recognition, with support for several engines and APIs, online and offline.
 
 * [AllenNLP](https://github.com/allenai/allennlp) **(not actively updated)** - An open source natural language processing library, based on PyTorch.
 
@@ -561,6 +593,56 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [fastText](https://github.com/facebookresearch/fastText) **(not actively updated)** - A library for efficient learning of word representations and sentence classification.
 
 * [TextBlob](https://github.com/sloria/TextBlob) **(not actively updated)** - A Python library for processing textual data.
+
+### Conversation & Translation
+
+* [SpeechBrain](https://github.com/speechbrain/speechbrain) - An open-source and all-in-one conversational AI toolkit based on PyTorch.
+
+* [NeMo](https://github.com/NVIDIA/NeMo) - A toolkit for conversational AI, based on PyTorch.
+
+* [Sockeye](https://github.com/awslabs/sockeye) - An open-source sequence-to-sequence framework for Neural Machine Translation, based on PyTorch.
+
+* [DeepPavlov](https://github.com/deeppavlov/DeepPavlov) - An open-source conversational AI library built on TensorFlow, Keras and PyTorch.
+
+* [OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py) - The PyTorch version of the OpenNMT project, an open-source neural machine translation framework.
+
+* [OpenNMT-tf](https://github.com/OpenNMT/OpenNMT-tf) - The TensorFlow version of the OpenNMT project, an open-source neural machine translation framework.
+
+* [Rasa](https://github.com/RasaHQ/rasa) - Open source machine learning framework to automate text- and voice-based conversations.
+
+* [SentencePiece](https://github.com/google/sentencepiece) - Unsupervised text tokenizer for Neural Network-based text generation.
+
+* [subword-nmt](https://github.com/rsennrich/subword-nmt) - Unsupervised Word Segmentation for Neural Machine Translation and Text Generation.
+
+* [OpenPrompt](https://github.com/thunlp/OpenPrompt) - An Open-Source Framework for Prompt-Learning.
+
+* [sumy](https://github.com/miso-belica/sumy) - Module for automatic summarization of text documents and HTML pages.
+
+* [FARM](https://github.com/deepset-ai/FARM) **(not actively updated)** - Fast & easy transfer learning for NLP, which focuses on Question Answering.
+
+* [Haystack](https://github.com/deepset-ai/haystack) **(successor of FARM)** - A high-level natural language processing library for deployment and production, based on PyTorch and HuggingFace Transformers.
+
+### Speech & Audio
+
+* [TTS](https://github.com/coqui-ai/TTS) - A library for advanced Text-to-Speech generation.
+
+* [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis) - A Python library for audio feature extraction, classification, segmentation and applications.
+
+* [Porcupine](https://github.com/Picovoice/porcupine) - On-device wake word detection powered by deep learning.
+
+* [Magenta](https://github.com/magenta/magenta) **(no longer maintained)** - Music and Art Generation with Machine Intelligence.
+
+* [SpeechRecognition](https://github.com/Uberi/speech_recognition) **(not actively updated)** - Library for performing speech recognition, with support for several engines and APIs, online and offline.
+
+### Others
+
+* [Spleeter](https://github.com/deezer/spleeter) - A source separation library with pretrained models, based on TensorFlow.
+
+* [Language Interpretability Tool](https://github.com/PAIR-code/lit) - Interactively analyze NLP models for model understanding in an extensible and framework agnostic interface.
+
+* [TextAttack](https://github.com/QData/TextAttack) - A Python framework for adversarial attacks, data augmentation, and model training in NLP.
+
+* [CheckList](https://github.com/marcotcr/checklist) - Behavioral Testing of NLP models with CheckList.
 
 ## Reinforcement Learning
 
@@ -698,6 +780,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 ## Linear Algebra / Statistics Toolkit
 
+### General Purpose Tensor Library
+
 * [NumPy](https://github.com/numpy/numpy) - The fundamental package for scientific computing with Python.
 
 * [SciPy](https://github.com/scipy/scipy) - An open-source software for mathematics, science, and engineering in Python.
@@ -710,15 +794,19 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [PyCUDA](https://github.com/inducer/pycuda) - Pythonic Access to CUDA, with Arrays and Algorithms.
 
+* [NumExpr](https://github.com/pydata/numexpr) - Fast numerical array expression evaluator for Python, NumPy, PyTables, pandas, bcolz and more.
+
+* [Bottleneck](https://github.com/pydata/bottleneck) - Fast NumPy array functions written in C.
+
 * [Mars](https://github.com/mars-project/mars) - A tensor-based unified framework for large-scale data computation which scales numpy, pandas, scikit-learn and many other libraries.
 
 * [TensorLy](https://github.com/tensorly/tensorly) - A Python library that aims at making tensor learning simple and accessible.
 
 * [Pythran](https://github.com/serge-sans-paille/pythran) - An ahead of time compiler for a subset of the Python language, with a focus on scientific computing.
 
-* [torchdiffeq](https://github.com/rtqichen/torchdiffeq) - Differentiable ordinary differential equation (ODE) solvers with full GPU support and O(1)-memory backpropagation.
+* [Patsy](https://github.com/pydata/patsy) **(no longer maintained)** - Describing statistical models in Python using symbolic formulas.
 
-* [Statsmodels](https://github.com/statsmodels/statsmodels) - Statistical modeling and econometrics in Python.
+* [Formulaic](https://github.com/matthewwardrop/formulaic) **(successor of Patsy)** - A high-performance implementation of Wilkinson formulas for Python.
 
 * [Theano](https://github.com/Theano/Theano) **(no longer maintained)** - A Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.
 
@@ -726,9 +814,19 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [einops](https://github.com/arogozhnikov/einops) - A tensor operation library for NumPy, PyTorch, TensorFlow and JAX.
 
+### Tensor Similarity & Dimension Reduction
+
 * [Milvus](https://github.com/milvus-io/milvus) - An open-source vector database built to power embedding similarity search and AI applications.
 
 * [Faiss](https://github.com/facebookresearch/faiss) - A library for efficient similarity search and clustering of dense vectors.
+
+* [openTSNE](https://github.com/pavlin-policar/openTSNE) - Extensible, parallel Python implementations of t-SNE.
+
+* [UMAP](https://github.com/lmcinnes/umap) - Uniform Manifold Approximation and Projection, a dimension reduction technique that can be used for visualisation similarly to t-SNE.
+
+### Statistical Toolkit
+
+* [Statsmodels](https://github.com/statsmodels/statsmodels) - Statistical modeling and econometrics in Python.
 
 * [shap](https://github.com/slundberg/shap) - A game theoretic approach to explain the output of any machine learning model.
 
@@ -752,25 +850,63 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [ArviZ](https://github.com/arviz-devs/arviz) - A Python package for exploratory analysis of Bayesian models.
 
-* [openTSNE](https://github.com/pavlin-policar/openTSNE) - Extensible, parallel Python implementations of t-SNE.
+### Others
 
-* [UMAP](https://github.com/lmcinnes/umap) - Uniform Manifold Approximation and Projection, a dimension reduction technique that can be used for visualisation similarly to t-SNE.
+* [torchdiffeq](https://github.com/rtqichen/torchdiffeq) - Differentiable ordinary differential equation (ODE) solvers with full GPU support and O(1)-memory backpropagation.
 
 ## Data Processing
 
+### Data Representation
+
+* [pandas](https://github.com/pandas-dev/pandas) - Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more.
+
 * [cuDF](https://github.com/rapidsai/cudf) - GPU DataFrame Library.
+
+* [Polars](https://github.com/pola-rs/polars) - Fast multi-threaded DataFrame library in Rust, Python and Node.js.
+
+* [Modin](https://github.com/modin-project/modin) - Scale your Pandas workflows by changing a single line of code.
+
+* [Vaex](https://github.com/vaexio/vaex) - Out-of-Core hybrid Apache Arrow/NumPy DataFrame for Python, ML, visualization and exploration of big tabular data at a billion rows per second.
+
+* [PyTables](https://github.com/PyTables/PyTables) - A Python package to manage extremely large amounts of data.
+
+* [Pandaral.lel](https://github.com/nalepae/pandarallel) - A simple and efficient tool to parallelize Pandas operations on all available CPUs.
+
+* [swifter](https://github.com/jmcarpenter2/swifter) - A package which efficiently applies any function to a pandas dataframe or series in the fastest available manner.
+
+* [datatable](https://github.com/h2oai/datatable) - A Python package for manipulating 2-dimensional tabular data structures.
+
+* [xarray](https://github.com/pydata/xarray) - N-D labeled arrays and datasets in Python.
+
+* [Zarr](https://github.com/zarr-developers/zarr-python) - An implementation of chunked, compressed, N-dimensional arrays for Python.
+
+* [Python Sorted Containers](https://github.com/grantjenks/python-sortedcontainers) - Python Sorted Container Types: Sorted List, Sorted Dict, and Sorted Set.
+
+* [Pyrsistent](https://github.com/tobgu/pyrsistent) - Persistent/Immutable/Functional data structures for Python.
+
+* [immutables](https://github.com/MagicStack/immutables) - A high-performance immutable mapping type for Python.
+
+* [DocArray](https://github.com/jina-ai/docarray) - A library for nested, unstructured, multimodal data in transit, including text, image, audio, video, 3D mesh, etc.
+
+* [Texthero](https://github.com/jbesomi/texthero) - A python toolkit to work with text-based dataset, bases on Pandas.
+
+* [ftfy](https://github.com/rspeer/python-ftfy) - Fixes mojibake and other glitches in Unicode text.
+
+* [Box](https://github.com/cdgriffith/Box) - Python dictionaries with advanced dot notation access.
+
+* [bidict](https://github.com/jab/bidict) - The bidirectional mapping library for Python.
+
+* [anytree](https://github.com/c0fec0de/anytree) - Python tree data library.
+
+* [pydantic](https://github.com/pydantic/pydantic) - Data parsing and validation using Python type hints.
+
+* [stockstats](https://github.com/jealous/stockstats) - Supply a wrapper ``StockDataFrame`` based on the ``pandas.DataFrame`` with inline stock statistics/indicators support.
+
+### Data Pre-processing & Loading
 
 * [DALI](https://github.com/NVIDIA/DALI) - A library for data loading and pre-processing to accelerate deep learning applications.
 
-* [Pillow](https://github.com/python-pillow/Pillow) - The friendly PIL fork (Python Imaging Library).
-
-* [Imageio](https://github.com/imageio/imageio) - Python library for reading and writing image data.
-
-* [MoviePy](https://github.com/Zulko/moviepy) - Video editing with Python.
-
-* [Wand](https://github.com/emcconville/wand) - The ctypes-based simple ImageMagick binding for Python.
-
-* [VidGear](https://github.com/abhiTronix/vidgear) - A High-performance cross-platform Video Processing Python framework powerpacked with unique trailblazing features.
+* [pandera](https://github.com/unionai-oss/pandera) - A light-weight, flexible, and expressive statistical data testing library.
 
 * [AugLy](https://github.com/facebookresearch/AugLy) - A data augmentations library for audio, image, text, and video.
 
@@ -784,9 +920,41 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [ffcv](https://github.com/libffcv/ffcv) - A drop-in data loading system that dramatically increases data throughput in model training.
 
-* [ImageHash](https://github.com/JohannesBuchner/imagehash) - An image hashing library written in Python.
+* [NLPAUG](https://github.com/makcedward/nlpaug) - Data augmentation for NLP.
+
+* [Audiomentations](https://github.com/iver56/audiomentations) - A Python library for audio data augmentation.
+
+* [torch-audiomentations](https://github.com/asteroid-team/torch-audiomentations) - Fast audio data augmentation in PyTorch, with GPU support.
+
+* [librosa](https://github.com/librosa/librosa) - A python package for music and audio analysis.
+
+* [Pydub](https://github.com/jiaaro/pydub) - Manipulate audio with a simple and easy high level interface.
+
+* [DDSP](https://github.com/magenta/ddsp) - A library of differentiable versions of common DSP functions.
+
+* [TSFRESH](https://github.com/blue-yonder/tsfresh) - Automatic extraction of relevant features from time series.
+
+* [TA](https://github.com/bukosabino/ta) - A Technical Analysis library useful to do feature engineering from financial time series datasets, based on Pandas and NumPy.
+
+* [Featuretools](https://github.com/alteryx/featuretools) - An open source python library for automated feature engineering.
+
+* [Feature-engine](https://github.com/feature-engine/feature_engine) - A Python library with multiple transformers to engineer and select features for use in machine learning models.
+
+* [fancyimpute](https://github.com/iskandr/fancyimpute) **(not actively updated)** - A variety of matrix completion and imputation algorithms implemented in Python.
+
+### Data Similarity
 
 * [image-match](https://github.com/ProvenanceLabs/image-match) - a simple package for finding approximate image matches from a corpus.
+
+* [jellyfish](https://github.com/jamesturk/jellyfish) - A library for approximate & phonetic matching of strings.
+
+* [TextDistance](https://github.com/life4/textdistance) - Python library for comparing distance between two or more sequences by many algorithms.
+
+* [Qdrant](https://github.com/qdrant/qdrant) - A vector similarity search engine for text, image and categorical data in Rust.
+
+### Data Management
+
+* [ImageHash](https://github.com/JohannesBuchner/imagehash) - An image hashing library written in Python.
 
 * [pandas-profiling](https://github.com/ydataai/pandas-profiling) - Create HTML data profiling reports for pandas DataFrame.
 
@@ -794,43 +962,13 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Datasette](https://github.com/simonw/datasette) - An open source multi-tool for exploring and publishing data.
 
+* [glom](https://github.com/mahmoud/glom) - Python's nested data operator (and CLI), for all your declarative restructuring needs.
+
 * [dedupe](https://github.com/dedupeio/dedupe) - A python library that uses machine learning to perform fuzzy matching, deduplication and entity resolution quickly on structured data.
 
 * [Ciphey](https://github.com/Ciphey/Ciphey) - Automatically decrypt encryptions without knowing the key or cipher, decode encodings, and crack hashes.
 
-* [jellyfish](https://github.com/jamesturk/jellyfish) - A library for approximate & phonetic matching of strings.
-
-* [TextDistance](https://github.com/life4/textdistance) - Python library for comparing distance between two or more sequences by many algorithms.
-
-* [NLPAUG](https://github.com/makcedward/nlpaug) - Data augmentation for NLP.
-
-* [Texthero](https://github.com/jbesomi/texthero) - A python toolkit to work with text-based dataset, bases on Pandas.
-
-* [ftfy](https://github.com/rspeer/python-ftfy) - Fixes mojibake and other glitches in Unicode text.
-
-* [librosa](https://github.com/librosa/librosa) - A python package for music and audio analysis.
-
-* [Pydub](https://github.com/jiaaro/pydub) - Manipulate audio with a simple and easy high level interface.
-
-* [Audiomentations](https://github.com/iver56/audiomentations) - A Python library for audio data augmentation.
-
-* [torch-audiomentations](https://github.com/asteroid-team/torch-audiomentations) - Fast audio data augmentation in PyTorch, with GPU support.
-
-* [DDSP](https://github.com/magenta/ddsp) - A library of differentiable versions of common DSP functions.
-
-* [TSFRESH](https://github.com/blue-yonder/tsfresh) - Automatic extraction of relevant features from time series.
-
-* [Qdrant](https://github.com/qdrant/qdrant) - A vector similarity search engine for text, image and categorical data in Rust.
-
-* [TA](https://github.com/bukosabino/ta) - A Technical Analysis library useful to do feature engineering from financial time series datasets, based on Pandas and NumPy.
-
-* [stockstats](https://github.com/jealous/stockstats) - Supply a wrapper ``StockDataFrame`` based on the ``pandas.DataFrame`` with inline stock statistics/indicators support.
-
-* [Featuretools](https://github.com/alteryx/featuretools) - An open source python library for automated feature engineering.
-
-* [Feature-engine](https://github.com/feature-engine/feature_engine) - A Python library with multiple transformers to engineer and select features for use in machine learning models.
-
-* [fancyimpute](https://github.com/iskandr/fancyimpute) **(not actively updated)** - A variety of matrix completion and imputation algorithms implemented in Python.
+* [datasketch](https://github.com/ekzhu/datasketch) - Gives you probabilistic data structures that can process and search very large amount of data super fast, with little loss of accuracy.
 
 ## Data Visualization
 
@@ -906,13 +1044,31 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 ## Machine Learning Tutorials
 
-* [labml.ai](https://nn.labml.ai/) - A collection of PyTorch implementations of neural networks and related algorithms, which are documented with explanations and rendered as side-by-side formatted notes.
-
 * [PyTorch official tutorials](https://pytorch.org/tutorials/) - Official tutorials for PyTorch.
 
-* [numpy-100](https://github.com/rougier/numpy-100) - 100 numpy exercises (with solutions).
+* [labml.ai](https://nn.labml.ai/) - A collection of PyTorch implementations of neural networks and related algorithms, which are documented with explanations and rendered as side-by-side formatted notes.
 
 # Full-Stack Development
+
+## DevOps
+
+* [Docker Compose](https://github.com/docker/compose) - Define and run multi-container applications with Docker.
+  * <details open><summary>Related projects:</summary>
+
+    * [Docker SDK for Python](https://github.com/docker/docker-py) - A Python library for the Docker Engine API
+  </details>
+
+* [Kubernetes Python Client](https://github.com/kubernetes-client/python) - Official Python client library for kubernetes.
+
+* [Ansible](https://github.com/ansible/ansible) - A radically simple IT automation platform that makes your applications and systems easier to deploy and maintain.
+
+* [Pulumi](https://github.com/pulumi/pulumi) - Infrastructure as Code SDK is the easiest way to create and deploy cloud software that use containers, serverless functions, hosted services, and infrastructure, on any cloud.
+
+* [Fabric](https://github.com/fabric/fabric) - Simple, Pythonic remote execution and deployment.
+
+* [pyinfra](https://github.com/Fizzadar/pyinfra) - Automates infrastructure super fast at massive scale. It can be used for ad-hoc command execution, service deployment, configuration management and more.
+
+* [schedule](https://github.com/dbader/schedule) - Python job scheduling for humans.
 
 ## Web Development
 
@@ -920,11 +1076,97 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [D3](https://github.com/d3/d3) - A JavaScript library for visualizing data using web standards.
 
+* [Paramiko](https://github.com/paramiko/paramiko) - The leading native Python SSHv2 protocol library.
+
+* [Netmiko](https://github.com/ktbyers/netmiko) - Multi-vendor library to simplify Paramiko SSH connections to network devices.
+
+## Process, Thread & Coroutine
+
+* [sh](https://github.com/amoffat/sh) - A full-fledged subprocess replacement for Python 2, Python 3, PyPy and PyPy3 that allows you to call any program as if it were a function.
+
+* [Supervisor](https://github.com/Supervisor/supervisor) - A client/server system that allows its users to control a number of processes on UNIX-like operating systems.
+
+* [Pexpect](https://github.com/pexpect/pexpect) - A Python module for controlling interactive programs in a pseudo-terminal.
+
+* [Plumbum](https://github.com/tomerfiliba/plumbum) - A small yet feature-rich library for shell script-like programs in Python.
+
+* [Greenlets](https://github.com/python-greenlet/greenlet) - Lightweight in-process concurrent programming.
+
+* [AnyIO](https://github.com/agronholm/anyio) - High level asynchronous concurrency and networking framework that works on top of either trio or asyncio.
+
 ## Data Management & Processing
 
 * [Apache Flink](https://github.com/apache/flink) - An open source stream processing framework with powerful stream- and batch-processing capabilities.
 
+* [TinyDB](https://github.com/msiemens/tinydb) - A lightweight document oriented database written in pure Python and has no external dependencies.
+
 * [StreamAlert](https://github.com/airbnb/streamalert) - A serverless, realtime data analysis framework which empowers you to ingest, analyze, and alert on data from any environment, using datasources and alerting logic you define.
+
+## Data Format & I/O
+
+* [protobuf](https://github.com/protocolbuffers/protobuf) - Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data.
+
+* [FlatBuffers](https://github.com/google/flatbuffers) - A cross platform serialization library architected for maximum memory efficiency.
+
+### For Python
+
+* [marshmallow](https://github.com/marshmallow-code/marshmallow) - A lightweight library for converting complex objects to and from simple Python datatypes.
+
+* [cloudpickle](https://github.com/cloudpipe/cloudpickle) - Extended pickling support for Python objects.
+
+* [dill](https://github.com/uqfoundation/dill) - Extends python's pickle module for serializing and de-serializing python objects to the majority of the built-in python types.
+
+* [UltraJSON](https://github.com/ultrajson/ultrajson) - Ultra fast JSON decoder and encoder written in C with Python bindings.
+
+* [orjson](https://github.com/ijl/orjson) - Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy
+
+* [simplejson](https://github.com/simplejson/simplejson) - A simple, fast, extensible JSON encoder/decoder for Python.
+
+* [jsonschema](https://github.com/python-jsonschema/jsonschema) - An implementation of the JSON Schema specification for Python.
+
+* [jsonpickle](https://github.com/jsonpickle/jsonpickle) - Python library for serializing any arbitrary object graph into JSON.
+
+* [MessagePack](https://github.com/msgpack/msgpack-python) - An efficient binary serialization format. It lets you exchange data among multiple languages like JSON.
+
+* [StrictYAML](https://github.com/crdoconnor/strictyaml) - Type-safe YAML parser and validator.
+
+* [HDF5 for Python](https://github.com/h5py/h5py) - The h5py package is a Pythonic interface to the HDF5 binary data format.
+
+* [validators](https://github.com/python-validators/validators) - Python Data Validation for Humans.
+
+* [Arrow](https://github.com/arrow-py/arrow) - A Python library that offers a sensible and human-friendly approach to creating, manipulating, formatting and converting dates, times and timestamps.
+
+* [Pendulum](https://github.com/sdispater/pendulum) - Python datetimes made easy.
+
+* [dateutil](https://github.com/dateutil/dateutil) - The dateutil module provides powerful extensions to the standard datetime module, available in Python.
+
+* [dateparser](https://github.com/scrapinghub/dateparser) - Python parser for human readable dates.
+
+* [Watchdog](https://github.com/gorakhargosh/watchdog) - Python library and shell utilities to monitor filesystem events.
+
+* [uvloop](https://github.com/MagicStack/uvloop) - A fast, drop-in replacement of the built-in asyncio event loop.
+
+* [aiofiles](https://github.com/Tinche/aiofiles) - An Apache2 licensed library, written in Python, for handling local disk files in asyncio applications.
+
+* [PyFilesystem2](https://github.com/PyFilesystem/pyfilesystem2) - Python's Filesystem abstraction layer.
+
+* [path](https://github.com/jaraco/path) - Object-oriented file system path manipulation.
+
+* [schema](https://github.com/keleshev/schema) **(not actively updated)** - A library for validating Python data structures.
+
+## Design Pattern
+
+* [python-patterns](https://github.com/faif/python-patterns) - A collection of design patterns/idioms in Python.
+
+* [transitions](https://github.com/pytransitions/transitions) - A lightweight, object-oriented finite state machine implementation in Python with many extensions.
+
+## Programming Algorithm
+
+* [algorithms](https://github.com/keon/algorithms) - Minimal examples of data structures and algorithms in Python.
+
+## Programming Language Tutorials
+
+* [numpy-100](https://github.com/rougier/numpy-100) - 100 numpy exercises (with solutions).
 
 ---
 
