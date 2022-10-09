@@ -53,6 +53,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
   - [Machine Learning Tutorials](#machine-learning-tutorials)
 - [Full-Stack Development](#full-stack-development)
   - [DevOps](#devops)
+  - [Desktop App Development](#desktop-app-development)
+    - [Python Toolkit](#python-toolkit)
   - [Web Development](#web-development)
   - [Process, Thread & Coroutine](#process-thread--coroutine)
   - [Data Management & Processing](#data-management--processing)
@@ -1068,7 +1070,59 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [pyinfra](https://github.com/Fizzadar/pyinfra) - Automates infrastructure super fast at massive scale. It can be used for ad-hoc command execution, service deployment, configuration management and more.
 
+## Desktop App Development
+
+### Python Toolkit
+
+* [Kivy](https://github.com/kivy/kivy) - Open source UI framework written in Python, running on Windows, Linux, macOS, Android and iOS.
+
+* [Gooey](https://github.com/chriskiehl/Gooey) - Turn (almost) any Python command line program into a full GUI application with one line.
+
+* [DearPyGui](https://github.com/hoffstadt/DearPyGui) - A fast and powerful Graphical User Interface Toolkit for Python with minimal dependencies.
+
+* [Flexx](https://github.com/flexxui/flexx) - Write desktop and web apps in pure Python.
+
+* [PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI) - Transforms the tkinter, Qt, WxPython, and Remi (browser-based) GUI frameworks into a simpler interface.
+
+* [Eel](https://github.com/python-eel/Eel) - A little Python library for making simple Electron-like HTML/JS GUI apps.
+
+* [Toga](https://github.com/beeware/toga) - A Python native, OS native GUI toolkit.
+
 * [schedule](https://github.com/dbader/schedule) - Python job scheduling for humans.
+
+* [Click](https://github.com/pallets/click) - A Python package for creating beautiful command line interfaces in a composable way with as little code as necessary.
+
+* [Rich](https://github.com/Textualize/rich) - A Python library for rich text and beautiful formatting in the terminal.
+
+* [Colorama](https://github.com/tartley/colorama) - Simple cross-platform colored terminal text in Python.
+
+* [colout](https://github.com/nojhan/colout) - Color text streams with a polished command line interface.
+
+* [ASCIIMATICS](https://github.com/peterbrittain/asciimatics) - A cross platform package to do curses-like operations, plus higher level APIs and widgets to create text UIs and ASCII art animations.
+
+* [Emoji](https://github.com/carpedm20/emoji) - emoji terminal output for Python.
+
+* [Python Fire](https://github.com/google/python-fire) - A library for automatically generating command line interfaces (CLIs) from absolutely any Python object.
+
+* [Typer](https://github.com/tiangolo/typer) - A Python library for building CLI applications.
+
+* [Python Prompt Toolkit](https://github.com/prompt-toolkit/python-prompt-toolkit) - Library for building powerful interactive command line applications in Python.
+
+* [Questionary](https://github.com/tmbo/questionary) - A Python library for effortlessly building pretty command line interfaces.
+
+* [Argcomplete](https://github.com/kislyuk/argcomplete) - Provides easy, extensible command line tab completion of arguments for your Python script.
+
+* [python-dotenv](https://github.com/theskumar/python-dotenv) - Reads key-value pairs from a .env file and can set them as environment variables.
+
+* [dynaconf](https://github.com/dynaconf/dynaconf) - Configuration Management for Python.
+
+* [Hydra](https://github.com/facebookresearch/hydra) - A framework for elegantly configuring complex applications.
+
+* [Python Decouple](https://github.com/henriquebastos/python-decouple) - Helps you to organize your settings so that you can change parameters without having to redeploy your app.
+
+* [OmegaConf](https://github.com/omry/omegaconf) - A hierarchical configuration system, with support for merging configurations from multiple sources (YAML config files, dataclasses/objects and CLI arguments) providing a consistent API regardless of how the configuration was created.
+
+* [Gin Config](https://github.com/google/gin-config) - Provides a lightweight configuration framework for Python.
 
 ## Web Development
 
@@ -1152,6 +1206,14 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [path](https://github.com/jaraco/path) - Object-oriented file system path manipulation.
 
+* [phonenumbers Python Library](https://github.com/daviddrysdale/python-phonenumbers) - Python port of Google's libphonenumber.
+
+* [Chardet](https://github.com/chardet/chardet) - Python character encoding detector.
+
+* [Python Slugify](https://github.com/un33k/python-slugify) - A Python slugify application that handles unicode.
+
+* [humanize](https://github.com/python-humanize/humanize) - Contains various common humanization utilities, like turning a number into a fuzzy human-readable duration ("3 minutes ago") or into a human-readable size or throughput.
+
 * [schema](https://github.com/keleshev/schema) **(not actively updated)** - A library for validating Python data structures.
 
 ## Design Pattern
@@ -1163,6 +1225,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 ## Programming Algorithm
 
 * [algorithms](https://github.com/keon/algorithms) - Minimal examples of data structures and algorithms in Python.
+
+* [cachetools](https://github.com/tkem/cachetools) - Provides various memoizing collections and decorators, including variants of the Python Standard Library's @lru_cache function decorator.
 
 ## Programming Language Tutorials
 
