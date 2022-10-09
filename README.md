@@ -58,10 +58,12 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
   - [Web Development](#web-development)
   - [Process, Thread & Coroutine](#process-thread--coroutine)
   - [Data Management & Processing](#data-management--processing)
+    - [Database & Cloud Management](#database--cloud-management)
+    - [Streaming Data Management](#streaming-data-management)
   - [Data Format & I/O](#data-format--io)
     - [For Python](#for-python)
-  - [Design Pattern](#design-pattern)
-  - [Programming Algorithm](#programming-algorithm)
+  - [Design Pattern & Programming Algorithm](#design-pattern--programming-algorithm)
+    - [For Python](#for-python-1)
   - [Programming Language Tutorials](#programming-language-tutorials)
 - [Academic](#academic)
   - [Mathematics](#mathematics)
@@ -237,6 +239,12 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Elephas](https://github.com/maxpumperla/elephas) **(no longer maintained)** - Distributed Deep learning with Keras & Spark.
 
 * [Elephas](https://github.com/danielenricocahall/elephas) **(successor of maxpumperla/elephas)** - Distributed Deep learning with Keras & Spark.
+
+* [MLeap](https://github.com/combust/mleap) - Allows data scientists and engineers to deploy machine learning pipelines from Spark and Scikit-learn to a portable format and execution engine.
+
+* [ZenML](https://github.com/zenml-io/zenml) - Build portable, production-ready MLOps pipelines.
+
+* [Optimus](https://github.com/hi-primus/optimus) - An opinionated python library to easily load, process, plot and create ML models that run over pandas, Dask, cuDF, dask-cuDF, Vaex or Spark.
 
 * [ONNX](https://github.com/onnx/onnx) - Open standard for machine learning interoperability.
 
@@ -816,6 +824,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [einops](https://github.com/arogozhnikov/einops) - A tensor operation library for NumPy, PyTorch, TensorFlow and JAX.
 
+* [Joblib](https://github.com/joblib/joblib) - Running Python functions as pipeline jobs, with optimizations for numpy.
+
 ### Tensor Similarity & Dimension Reduction
 
 * [Milvus](https://github.com/milvus-io/milvus) - An open-source vector database built to power embedding similarity search and AI applications.
@@ -910,6 +920,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [pandera](https://github.com/unionai-oss/pandera) - A light-weight, flexible, and expressive statistical data testing library.
 
+* [Kedro](https://github.com/kedro-org/kedro) - A Python framework for creating reproducible, maintainable and modular data science code.
+
+* [PyFunctional](https://github.com/EntilZha/PyFunctional) - Python library for creating data pipelines with chain functional programming.
+
 * [AugLy](https://github.com/facebookresearch/AugLy) - A data augmentations library for audio, image, text, and video.
 
 * [Albumentations](https://github.com/albumentations-team/albumentations) - A Python library for image augmentation.
@@ -941,6 +955,14 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Featuretools](https://github.com/alteryx/featuretools) - An open source python library for automated feature engineering.
 
 * [Feature-engine](https://github.com/feature-engine/feature_engine) - A Python library with multiple transformers to engineer and select features for use in machine learning models.
+
+* [img2dataset](https://github.com/rom1504/img2dataset) - Easily turn large sets of image urls to an image dataset.
+
+* [Faker](https://github.com/joke2k/faker) - A Python package that generates fake data for you.
+
+* [SDV](https://github.com/sdv-dev/SDV) - Synthetic Data Generation for tabular, relational and time series data.
+
+* [Snorkel](https://github.com/snorkel-team/snorkel) **(not actively updated)** - A system for quickly generating training data with weak supervision.
 
 * [fancyimpute](https://github.com/iskandr/fancyimpute) **(not actively updated)** - A variety of matrix completion and imputation algorithms implemented in Python.
 
@@ -1042,6 +1064,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [livelossplot](https://github.com/stared/livelossplot) - Live training loss plot in Jupyter Notebook for Keras, PyTorch and others.
 
+* [Diagrams](https://github.com/mingrammer/diagrams) - Lets you draw the cloud system architecture in Python code.
+
 * [Scattertext](https://github.com/JasonKessler/scattertext) **(not actively updated)** - A tool for finding distinguishing terms in corpora and displaying them in an interactive HTML scatter plot.
 
 ## Machine Learning Tutorials
@@ -1062,6 +1086,24 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Kubernetes Python Client](https://github.com/kubernetes-client/python) - Official Python client library for kubernetes.
 
+* [Apache Airflow](https://github.com/apache/airflow) - A platform to programmatically author, schedule, and monitor workflows.
+
+* [Celery](https://github.com/celery/celery) - Distributed Task Queue.
+
+* [Prefect 2](https://github.com/PrefectHQ/prefect) - The easiest way to transform any function into a unit of work that can be observed and governed by orchestration rules.
+
+* [Luigi](https://github.com/spotify/luigi) - A Python module that helps you build complex pipelines of batch jobs.
+
+* [RQ](https://github.com/rq/rq) - A simple Python library for queueing jobs and processing them in the background with workers.
+
+* [huey](https://github.com/coleifer/huey) - A little task queue for python.
+
+* [arq](https://github.com/samuelcolvin/arq) - Fast job queuing and RPC in python with asyncio and redis.
+
+* [TaskTiger](https://github.com/closeio/tasktiger) - Python task queue using Redis.
+
+* [Mara Pipelines](https://github.com/mara/mara-pipelines) - A lightweight opinionated ETL framework, halfway between plain scripts and Apache Airflow.
+
 * [Ansible](https://github.com/ansible/ansible) - A radically simple IT automation platform that makes your applications and systems easier to deploy and maintain.
 
 * [Pulumi](https://github.com/pulumi/pulumi) - Infrastructure as Code SDK is the easiest way to create and deploy cloud software that use containers, serverless functions, hosted services, and infrastructure, on any cloud.
@@ -1069,6 +1111,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Fabric](https://github.com/fabric/fabric) - Simple, Pythonic remote execution and deployment.
 
 * [pyinfra](https://github.com/Fizzadar/pyinfra) - Automates infrastructure super fast at massive scale. It can be used for ad-hoc command execution, service deployment, configuration management and more.
+
+* [whylogs](https://github.com/whylabs/whylogs) - The open standard for data logging.
 
 ## Desktop App Development
 
@@ -1106,6 +1150,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Typer](https://github.com/tiangolo/typer) - A Python library for building CLI applications.
 
+* [powerline-shell](https://github.com/b-ryan/powerline-shell) - A beautiful and useful prompt for your shell.
+
 * [Python Prompt Toolkit](https://github.com/prompt-toolkit/python-prompt-toolkit) - Library for building powerful interactive command line applications in Python.
 
 * [Questionary](https://github.com/tmbo/questionary) - A Python library for effortlessly building pretty command line interfaces.
@@ -1113,6 +1159,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Argcomplete](https://github.com/kislyuk/argcomplete) - Provides easy, extensible command line tab completion of arguments for your Python script.
 
 * [python-dotenv](https://github.com/theskumar/python-dotenv) - Reads key-value pairs from a .env file and can set them as environment variables.
+
+* [Cookiecutter](https://github.com/cookiecutter/cookiecutter) - A cross-platform command-line utility that creates projects from cookiecutters (project templates), e.g. Python package projects, C projects.
+
+* [PyScaffold](https://github.com/pyscaffold/pyscaffold) - A project generator for bootstrapping high quality Python packages, ready to be shared on PyPI and installable via pip.
 
 * [dynaconf](https://github.com/dynaconf/dynaconf) - Configuration Management for Python.
 
@@ -1123,6 +1173,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [OmegaConf](https://github.com/omry/omegaconf) - A hierarchical configuration system, with support for merging configurations from multiple sources (YAML config files, dataclasses/objects and CLI arguments) providing a consistent API regardless of how the configuration was created.
 
 * [Gin Config](https://github.com/google/gin-config) - Provides a lightweight configuration framework for Python.
+
+* [Py4J](https://github.com/py4j/py4j) - Enables Python programs to dynamically access arbitrary Java objects.
+
+* [keyboard](https://github.com/boppreh/keyboard) - Hook and simulate global keyboard events on Windows and Linux.
 
 ## Web Development
 
@@ -1150,11 +1204,104 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 ## Data Management & Processing
 
+### Database & Cloud Management
+
+* [Redis](https://github.com/redis/redis) - An in-memory database that persists on disk.
+  * <details open><summary>Related projects:</summary>
+
+    * [redis-py](https://github.com/redis/redis-py) - Redis Python client
+    * [Node-Redis](https://github.com/redis/node-redis) - Redis Node.js client
+    * [Jedis](https://github.com/redis/jedis) - Redis Java client
+  </details>
+
+* [MongoDB](https://github.com/mongodb/mongo) - The MongoDB Database.
+  * <details open><summary>Related projects:</summary>
+
+    * [PyMongo](https://github.com/mongodb/mongo-python-driver) - The Python driver for MongoDB
+    * [MongoDB Go Driver](https://github.com/mongodb/mongo-go-driver) - The Go driver for MongoDB
+    * [MongoDB NodeJS Driver](https://github.com/mongodb/node-mongodb-native) - The Node.js driver for MongoDB
+    * [MongoDB C# Driver](https://github.com/mongodb/mongo-csharp-driver) - The .NET driver for MongoDB
+    * [MongoEngine](https://github.com/MongoEngine/mongoengine) - A Python Object-Document-Mapper for working with MongoDB
+    * [Motor](https://github.com/mongodb/motor) - The async Python driver for MongoDB and Tornado or asyncio
+  </details>
+
 * [Apache Flink](https://github.com/apache/flink) - An open source stream processing framework with powerful stream- and batch-processing capabilities.
+
+* [Google Cloud Python Client](https://github.com/googleapis/google-cloud-python) - Google Cloud Client Library for Python.
+
+* [Elasticsearch](https://github.com/elastic/elasticsearch) - Free and Open, Distributed, RESTful Search Engine.
+  * <details open><summary>Related projects:</summary>
+
+    * [Kibana](https://github.com/elastic/kibana) - A browser-based analytics and search dashboard for Elasticsearch
+    * [Logstash](https://github.com/elastic/logstash) - Transport and process your logs, events, or other data
+    * [Beats](https://github.com/elastic/beats) - Lightweight shippers for Elasticsearch & Logstash
+    * [Elastic UI Framework](https://github.com/elastic/eui) - A collection of React UI components for quickly building user interfaces at Elastic
+    * [Elasticsearch Python Client](https://github.com/elastic/elasticsearch-py) - Official Elasticsearch client library for Python
+    * [Elasticsearch DSL](https://github.com/elastic/elasticsearch-dsl-py) - High level Python client for Elasticsearch
+    * [Elasticsearch Node.js client](https://github.com/elastic/elasticsearch-js) - Official Elasticsearch client library for Node.js
+    * [Elasticsearch PHP client](https://github.com/elastic/elasticsearch-php) - Official PHP client for Elasticsearch
+    * [go-elasticsearch](https://github.com/elastic/go-elasticsearch) - The official Go client for Elasticsearch
+  </details>
+
+* [SQLAlchemy](https://github.com/sqlalchemy/sqlalchemy) - The Python SQL Toolkit and Object Relational Mapper.
+  * <details open><summary>Related projects:</summary>
+
+    * [Alembic](https://github.com/sqlalchemy/alembic) - A database migrations tool for SQLAlchemy
+    * [SQLModel](https://github.com/tiangolo/sqlmodel) - SQL databases in Python, designed for simplicity, compatibility, and robustness
+    * [Databases](https://github.com/encode/databases) - Async database support for Python
+  </details>
+
+* [Apache Libcloud](https://github.com/apache/libcloud) - A Python library which hides differences between different cloud provider APIs and allows you to manage different cloud resources through a unified and easy to use API.
+
+* [PyMySQL](https://github.com/PyMySQL/PyMySQL) - Pure Python MySQL Client.
+  * <details open><summary>Related projects:</summary>
+
+    * [mysqlclient](https://github.com/PyMySQL/mysqlclient) - MySQL database connector for Python
+  </details>
+
+* [Tortoise ORM](https://github.com/tortoise/tortoise-orm) - Familiar asyncio ORM for python, built with relations in mind.
+
+* [Ibis](https://github.com/ibis-project/ibis) - Expressive analytics in Python at any scale.
+
+* [peewee](https://github.com/coleifer/peewee) - A small, expressive orm -- supports postgresql, mysql and sqlite.
 
 * [TinyDB](https://github.com/msiemens/tinydb) - A lightweight document oriented database written in pure Python and has no external dependencies.
 
+* [Pony](https://github.com/ponyorm/pony) - An advanced object-relational mapper.
+
+* [dataset](https://github.com/pudo/dataset) - Easy-to-use data handling for SQL data stores with support for implicit table creation, bulk loading, and transactions.
+
+* [Dagster](https://github.com/dagster-io/dagster) - An orchestration platform for the development, production, and observation of data assets.
+
+* [Great Expectations](https://github.com/great-expectations/great_expectations) - Helps data teams eliminate pipeline debt, through data testing, documentation, and profiling.
+
+* [dbt](https://github.com/dbt-labs/dbt-core) - Enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.
+
+* [Ploomber](https://github.com/ploomber/ploomber) - The fastest way to build data pipelines.
+
+* [Pypeln](https://github.com/cgarciae/pypeln) - A simple yet powerful Python library for creating concurrent data pipelines.
+
+* [petl](https://github.com/petl-developers/petl) - A general purpose Python package for extracting, transforming and loading tables of data.
+
+### Streaming Data Management
+
+* [Apache Beam](https://github.com/apache/beam) - A unified programming model for Batch and Streaming data processing.
+
+* [kafka-python](https://github.com/dpkp/kafka-python) - Python client for Apache Kafka.
+
+* [confluent-kafka-python](https://github.com/confluentinc/confluent-kafka-python) - Confluent's Kafka Python Client.
+
+* [Deep Lake](https://github.com/activeloopai/deeplake) - Data Lake for Deep Learning. Build, manage, query, version, & visualize datasets. Stream data real-time to PyTorch/TensorFlow.
+
+* [Streamparse](https://github.com/Parsely/streamparse) - Lets you run Python code against real-time streams of data via Apache Storm.
+
 * [StreamAlert](https://github.com/airbnb/streamalert) - A serverless, realtime data analysis framework which empowers you to ingest, analyze, and alert on data from any environment, using datasources and alerting logic you define.
+
+* [Prometheus](https://github.com/prometheus/prometheus) - The Prometheus monitoring system and time series database.
+  * <details open><summary>Related projects:</summary>
+
+    * [Prometheus Python Client](https://github.com/prometheus/client_python) - Prometheus instrumentation library for Python applications
+  </details>
 
 ## Data Format & I/O
 
@@ -1182,9 +1329,19 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [MessagePack](https://github.com/msgpack/msgpack-python) - An efficient binary serialization format. It lets you exchange data among multiple languages like JSON.
 
+* [PyYAML](https://github.com/yaml/pyyaml) - Canonical source repository for PyYAML.
+
 * [StrictYAML](https://github.com/crdoconnor/strictyaml) - Type-safe YAML parser and validator.
 
+* [xmltodict](https://github.com/martinblech/xmltodict) - Python module that makes working with XML feel like you are working with JSON.
+
+* [csvkit](https://github.com/wireservice/csvkit) - A suite of utilities for converting to and working with CSV, the king of tabular file formats.
+
+* [Tablib](https://github.com/jazzband/tablib) - Python Module for Tabular Datasets in XLS, CSV, JSON, YAML, &c.
+
 * [HDF5 for Python](https://github.com/h5py/h5py) - The h5py package is a Pythonic interface to the HDF5 binary data format.
+
+* [smart_open](https://github.com/RaRe-Technologies/smart_open) - Utils for streaming large files (S3, HDFS, gzip, bz2...).
 
 * [validators](https://github.com/python-validators/validators) - Python Data Validation for Humans.
 
@@ -1214,19 +1371,53 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [humanize](https://github.com/python-humanize/humanize) - Contains various common humanization utilities, like turning a number into a fuzzy human-readable duration ("3 minutes ago") or into a human-readable size or throughput.
 
+* [XlsxWriter](https://github.com/jmcnamara/XlsxWriter) - A Python module for creating Excel XLSX files.
+
+* [xlwings](https://github.com/xlwings/xlwings) - A Python library that makes it easy to call Python from Excel and vice versa.
+
+* [pygsheets](https://github.com/nithinmurali/pygsheets) - Google Spreadsheets Python API v4
+
+* [gdown](https://github.com/wkentaro/gdown) - Download a large file from Google Drive.
+
 * [schema](https://github.com/keleshev/schema) **(not actively updated)** - A library for validating Python data structures.
 
-## Design Pattern
+## Design Pattern & Programming Algorithm
+
+### For Python
 
 * [python-patterns](https://github.com/faif/python-patterns) - A collection of design patterns/idioms in Python.
 
 * [transitions](https://github.com/pytransitions/transitions) - A lightweight, object-oriented finite state machine implementation in Python with many extensions.
 
-## Programming Algorithm
+* [MicroPython](https://github.com/micropython/micropython) - A lean and efficient Python implementation for microcontrollers and constrained systems.
+
+* [Pyston](https://github.com/pyston/pyston) - A faster and highly-compatible implementation of the Python programming language.
+
+* [attrs](https://github.com/python-attrs/attrs) - Python Classes Without Boilerplate.
+
+* [Boltons](https://github.com/mahmoud/boltons) - A set of over 230 BSD-licensed, pure-Python utilities in the same spirit as — and yet conspicuously missing from — the standard library.
+
+* [cachetools](https://github.com/tkem/cachetools) - Provides various memoizing collections and decorators, including variants of the Python Standard Library's @lru_cache function decorator.
+
+* [More Itertools](https://github.com/more-itertools/more-itertools) - More routines for operating on iterables, beyond itertools.
+
+* [Toolz](https://github.com/pytoolz/toolz) - A set of utility functions for iterators, functions, and dictionaries.
+
+* [Funcy](https://github.com/Suor/funcy) - A collection of fancy functional tools focused on practicality.
+
+* [Dependency Injector](https://github.com/ets-labs/python-dependency-injector) - A dependency injection framework for Python.
+
+* [Tenacity](https://github.com/jd/tenacity) - An Apache 2.0 licensed general-purpose retrying library, written in Python, to simplify the task of adding retry behavior to just about anything.
+
+* [returns](https://github.com/dry-python/returns) - Make your functions return something meaningful, typed, and safe.
+
+* [wrapt](https://github.com/GrahamDumpleton/wrapt) - A Python module for decorators, wrappers and monkey patching.
 
 * [algorithms](https://github.com/keon/algorithms) - Minimal examples of data structures and algorithms in Python.
 
-* [cachetools](https://github.com/tkem/cachetools) - Provides various memoizing collections and decorators, including variants of the Python Standard Library's @lru_cache function decorator.
+* [DeepDiff](https://github.com/seperman/deepdiff) - Deep Difference and search of any Python object/data.
+
+* [Pygments](https://github.com/pygments/pygments) - A generic syntax highlighter written in Python.
 
 ## Programming Language Tutorials
 
