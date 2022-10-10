@@ -57,11 +57,14 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     - [Python Toolkit](#python-toolkit)
   - [Web Development](#web-development)
   - [Process, Thread & Coroutine](#process-thread--coroutine)
+  - [Profiling & Tracing](#profiling--tracing)
   - [Data Management & Processing](#data-management--processing)
     - [Database & Cloud Management](#database--cloud-management)
     - [Streaming Data Management](#streaming-data-management)
   - [Data Format & I/O](#data-format--io)
     - [For Python](#for-python)
+  - [Security](#security)
+  - [Package Management](#package-management)
   - [Design Pattern & Programming Algorithm](#design-pattern--programming-algorithm)
     - [For Python](#for-python-1)
   - [Programming Language Tutorials](#programming-language-tutorials)
@@ -1202,6 +1205,28 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [AnyIO](https://github.com/agronholm/anyio) - High level asynchronous concurrency and networking framework that works on top of either trio or asyncio.
 
+## Profiling & Tracing
+
+* [ORBIT](https://github.com/google/orbit) - A standalone C/C++ profiler for Windows and Linux.
+
+* [Tracy](https://github.com/wolfpld/tracy) - A real time, nanosecond resolution, remote telemetry, hybrid frame and sampling profiler for games and other applications.
+
+* [Coz](https://github.com/plasma-umass/coz) - Finding Code that Counts with Causal Profiling.
+
+* [py-spy](https://github.com/benfred/py-spy) - A sampling profiler for Python programs.
+
+* [Scalene](https://github.com/plasma-umass/scalene) - A high-performance, high-precision CPU, GPU, and memory profiler for Python.
+
+* [Pyroscope](https://github.com/pyroscope-io/pyroscope) - Pyroscope is an open source continuous profiling platform.
+
+* [pyinstrument](https://github.com/joerick/pyinstrument) - Call stack profiler for Python.
+
+* [vprof](https://github.com/nvdv/vprof) - A Python package providing rich and interactive visualizations for various Python program characteristics such as running time and memory usage.
+
+* [Wily](https://github.com/tonybaloney/wily) - A Python application for tracking, reporting on timing and complexity in Python code.
+
+* [Radon](https://github.com/rubik/radon) - Various code metrics for Python code.
+
 ## Data Management & Processing
 
 ### Database & Cloud Management
@@ -1381,6 +1406,34 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [schema](https://github.com/keleshev/schema) **(not actively updated)** - A library for validating Python data structures.
 
+## Security
+
+* [sqlmap](https://github.com/sqlmapproject/sqlmap) - Automatic SQL injection and database takeover tool.
+
+* [detect-secrets](https://github.com/Yelp/detect-secrets) - An enterprise friendly way of detecting and preventing secrets in code.
+
+* [Safety](https://github.com/pyupio/safety) - Safety checks Python dependencies for known security vulnerabilities and suggests the proper remediations for vulnerabilities detected.
+
+* [Bandit](https://github.com/PyCQA/bandit) - A tool designed to find common security issues in Python code.
+
+## Package Management
+
+* [Conda](https://github.com/conda/conda) - OS-agnostic, system-level binary package manager and ecosystem.
+
+* [mamba](https://github.com/mamba-org/mamba) - The Fast Cross-Platform Package Manager.
+
+* [pip](https://github.com/pypa/pip) - The Python package installer.
+
+* [Poetry](https://github.com/python-poetry/poetry) - Python packaging and dependency management made easy.
+
+* [pipx](https://github.com/pypa/pipx) - Install and Run Python Applications in Isolated Environments.
+
+* [PDM](https://github.com/pdm-project/pdm) - A modern Python package and dependency manager supporting the latest PEP standards.
+
+* [pip-tools](https://github.com/jazzband/pip-tools) - A set of tools to keep your pinned Python dependencies fresh.
+
+* [pipreqs](https://github.com/bndr/pipreqs) **(not actively updated)** - Generate pip requirements.txt file based on imports of any project.
+
 ## Design Pattern & Programming Algorithm
 
 ### For Python
@@ -1412,6 +1465,42 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [returns](https://github.com/dry-python/returns) - Make your functions return something meaningful, typed, and safe.
 
 * [wrapt](https://github.com/GrahamDumpleton/wrapt) - A Python module for decorators, wrappers and monkey patching.
+
+* [Mypy](https://github.com/python/mypy) - A static type checker for Python.
+
+* [Pyright](https://github.com/microsoft/pyright) - A fast type checker meant for large Python source bases.
+
+* [pytype](https://github.com/google/pytype) - A static type analyzer for Python code.
+
+* [Jedi](https://github.com/davidhalter/jedi) - Awesome autocompletion, static analysis and refactoring library for python.
+
+* [Beartype](https://github.com/beartype/beartype) - Unbearably fast near-real-time runtime type-checking in pure Python.
+
+* [Flake8](https://github.com/PyCQA/flake8) - A python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code.
+  * <details open><summary>Related projects:</summary>
+
+    * [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide) - The strictest and most opinionated python linter ever.
+  </details>
+
+* [Pylint](https://github.com/PyCQA/pylint) - A static code analyser for Python 2 or 3.
+
+* [isort](https://github.com/PyCQA/isort) - A Python utility / library to sort imports alphabetically, and automatically separated into sections and by type.
+
+* [prospector](https://github.com/PyCQA/prospector) - Inspects Python source files and provides information about type and location of classes, methods etc.
+
+* [Pyre](https://github.com/facebook/pyre-check) - Performant type-checking for python.
+
+* [YAPF](https://github.com/google/yapf) - A formatter for Python files.
+
+* [Black](https://github.com/psf/black) - The uncompromising Python code formatter.
+
+* [autopep8](https://github.com/hhatto/autopep8) - A tool that automatically formats Python code to conform to the PEP 8 style guide.
+
+* [rope](https://github.com/python-rope/rope) - A python refactoring library.
+
+* [pyupgrade](https://github.com/asottile/pyupgrade) - A tool (and pre-commit hook) to automatically upgrade syntax for newer versions of the language.
+
+* [Vulture](https://github.com/jendrikseipp/vulture) - Finds unused code in Python programs.
 
 * [algorithms](https://github.com/keon/algorithms) - Minimal examples of data structures and algorithms in Python.
 
