@@ -1,9 +1,20 @@
 # Awesome List
-A list of useful stuff in Machine Learning, Computer Graphics, Software Development, Mathematics, ...
+A list of useful stuff in Machine Learning, Computer Graphics, Software Development, ...
 
-> References:
-> - [github.com/ml-tooling/best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python)
-> - [github.com/ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
+> Awesome lists on other topics:
+> - [ml-tooling/best-of-ml-python](https://github.com/ml-tooling/best-of-ml-python)
+> - [josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning)
+> - [xinghaochen/awesome-hand-pose-estimation](https://github.com/xinghaochen/awesome-hand-pose-estimation)
+> - [ChaofWang/Awesome-Super-Resolution](https://github.com/ChaofWang/Awesome-Super-Resolution)
+> - [openMVG/awesome_3DReconstruction_list](https://github.com/openMVG/awesome_3DReconstruction_list)
+> - [grananqvist/Awesome-Quant-Machine-Learning-Trading](https://github.com/grananqvist/Awesome-Quant-Machine-Learning-Trading)
+> - [waitin2010/awesome-computer-graphics](https://github.com/waitin2010/awesome-computer-graphics)
+> - [ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
+> - [ellisonleao/magictools](https://github.com/ellisonleao/magictools)
+> - [ericjang/awesome-graphics](https://github.com/ericjang/awesome-graphics)
+> - [luisnts/awesome-computer-graphics](https://github.com/luisnts/awesome-computer-graphics)
+> - [fffaraz/awesome-cpp](https://github.com/fffaraz/awesome-cpp)
+> - [tayllan/awesome-algorithms](https://github.com/tayllan/awesome-algorithms)
 
 ---
 
@@ -51,28 +62,40 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     - [Data Management](#data-management)
   - [Data Visualization](#data-visualization)
   - [Machine Learning Tutorials](#machine-learning-tutorials)
+- [Computer Graphics](#computer-graphics)
+  - [Graphic Libraries & Renderers](#graphic-libraries--renderers)
+  - [Game Engines](#game-engines)
+  - [CG Tutorials](#cg-tutorials)
 - [Full-Stack Development](#full-stack-development)
   - [DevOps](#devops)
   - [Desktop App Development](#desktop-app-development)
     - [Python Toolkit](#python-toolkit)
   - [Web Development](#web-development)
   - [Process, Thread & Coroutine](#process-thread--coroutine)
-  - [Profiling & Tracing](#profiling--tracing)
+  - [Debugging & Profiling & Tracing](#debugging--profiling--tracing)
   - [Data Management & Processing](#data-management--processing)
     - [Database & Cloud Management](#database--cloud-management)
     - [Streaming Data Management](#streaming-data-management)
   - [Data Format & I/O](#data-format--io)
     - [For Python](#for-python)
+    - [For C++/C](#for-cc)
   - [Security](#security)
   - [Package Management](#package-management)
-  - [Design Pattern & Programming Algorithm](#design-pattern--programming-algorithm)
     - [For Python](#for-python-1)
+    - [For C++/C](#for-cc-1)
+  - [Containers & Language Extentions & Linting](#containers--language-extentions--linting)
+    - [For Python](#for-python-2)
+    - [For C++/C](#for-cc-2)
+    - [For Scala](#for-scala)
   - [Programming Language Tutorials](#programming-language-tutorials)
-- [Academic](#academic)
-  - [Mathematics](#mathematics)
-  - [Paper Reading](#paper-reading)
+    - [Python](#python)
+    - [C++/C](#cc)
+    - [Go](#go)
+    - [Java](#java)
+    - [Flutter](#flutter)
 - [Useful Tools](#useful-tools)
   - [MacOS](#macos)
+  - [Windows](#windows)
   - [Cross-Platform](#cross-platform)
 
 ---
@@ -109,6 +132,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     * [PyTorch Sparse](https://github.com/rusty1s/pytorch_sparse) - PyTorch Extension Library of Optimized Autograd Sparse Matrix Operations
     * [PyTorch Scatter](https://github.com/rusty1s/pytorch_scatter) - PyTorch Extension Library of Optimized Scatter Operations
     * [Torch-Struct](https://github.com/harvardnlp/pytorch-struct) - A library of tested, GPU implementations of core structured prediction algorithms for deep learning applications
+    * [torchinfo](https://github.com/TylerYep/torchinfo) - View model summaries in PyTorch
+    * [Torchshow](https://github.com/xwying/torchshow) - Visualize PyTorch tensors with a single line of code
     * [higher](https://github.com/facebookresearch/higher) **(not actively updated)** - A pytorch library allowing users to obtain higher order gradients over losses spanning training loops rather than individual training steps
     </details>
 
@@ -133,6 +158,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     * [TensorFlow Model Optimization Toolkit](https://github.com/tensorflow/model-optimization) - A toolkit to optimize ML models for deployment for Keras and TensorFlow, including quantization and pruning
     * [TensorFlow Model Analysis](https://github.com/tensorflow/model-analysis) - A library for evaluating TensorFlow models
     * [Trax](https://github.com/google/trax) **(successor of Tensor2Tensor)** - Deep Learning with Clear Code and Speed
+    * [Lattice](https://github.com/tensorflow/lattice) - Lattice methods in TensorFlow
     * [tf_numpy](https://www.tensorflow.org/guide/tf_numpy) - A subset of the NumPy API implemented in TensorFlow
     * [TensorFlowOnSpark](https://github.com/yahoo/TensorFlowOnSpark) - Brings TensorFlow programs to Apache Spark clusters
     * [Tensor2Tensor](https://github.com/tensorflow/tensor2tensor) **(no longer maintained)** - Library of deep learning models and datasets designed to make deep learning more accessible and accelerate ML research
@@ -547,6 +573,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 ### Image / Video Generation
 
+* [DALL·E Flow](https://github.com/jina-ai/dalle-flow) - A Human-in-the-Loop workflow for creating HD images from text.
+
+* [DALL·E Mini](https://github.com/borisdayma/dalle-mini) - Generate images from a text prompt.
+
 * [Kubric](https://github.com/google-research/kubric) - A data generation pipeline for creating semi-realistic synthetic multi-object videos with rich annotations such as instance segmentation masks, depth maps, and optical flow.
 
 * [benchmark_VAE](https://github.com/clementchadebec/benchmark_VAE) - Implements some of the most common (Variational) Autoencoder models under a unified implementation.
@@ -631,6 +661,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [sumy](https://github.com/miso-belica/sumy) - Module for automatic summarization of text documents and HTML pages.
 
+* [AI-Writer](https://github.com/BlinkDL/AI-Writer) - AI 写小说，生成玄幻和言情网文等等。中文预训练生成模型。
+
 * [FARM](https://github.com/deepset-ai/FARM) **(not actively updated)** - Fast & easy transfer learning for NLP, which focuses on Question Answering.
 
 * [Haystack](https://github.com/deepset-ai/haystack) **(successor of FARM)** - A high-level natural language processing library for deployment and production, based on PyTorch and HuggingFace Transformers.
@@ -705,6 +737,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Spektral](https://github.com/danielegrattarola/spektral) - A Python library for graph deep learning, based on Keras and TensorFlow.
 
+* [Graph Nets](https://github.com/deepmind/graph_nets) - Build Graph Nets in Tensorflow.
+
 * [Graph4nlp](https://github.com/graph4ai/graph4nlp) - A library for the easy use of Graph Neural Networks for NLP (DLG4NLP).
 
 * [Jraph](https://github.com/deepmind/jraph) - A Graph Neural Network Library in Jax.
@@ -712,6 +746,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [cuGraph](https://github.com/rapidsai/cugraph) - A collection of GPU accelerated graph algorithms that process data found in GPU DataFrames (cuDF).
 
 * [GraphEmbedding](https://github.com/shenweichen/GraphEmbedding) - Implementation and experiments of graph embedding algorithms.
+
+* [benchmarking-gnns](https://github.com/graphdeeplearning/benchmarking-gnns) - Repository for benchmarking graph neural networks.
 
 * [PyTorch-BigGraph](https://github.com/facebookresearch/PyTorch-BigGraph) **(not actively updated)** - Generate embeddings from large-scale graph-structured data,  based on PyTorch.
 
@@ -721,11 +757,23 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 ## Causal Inference
 
+* [EconML](https://github.com/microsoft/EconML) - A Python package for estimating heterogeneous treatment effects from observational data via machine learning.
+
 * [Causal ML](https://github.com/uber/causalml) - Uplift modeling and causal inference with machine learning algorithms.
 
 * [DoWhy](https://github.com/py-why/dowhy) - A Python library for causal inference that supports explicit modeling and testing of causal assumptions.
 
 * [CausalNex](https://github.com/quantumblacklabs/causalnex) - A Python library that helps data scientists to infer causation rather than observing correlation.
+
+* [causallib](https://github.com/IBM/causallib) - A Python package for modular causal inference analysis and model evaluations.
+
+* [pylift](https://github.com/wayfair/pylift) - Uplift modeling package.
+
+* [DoubleML](https://github.com/DoubleML/doubleml-for-py) - Double Machine Learning in Python.
+
+* [Causality](https://github.com/akelleh/causality) - Tools for causal analysis.
+
+* [YLearn](https://github.com/DataCanvasIO/YLearn) - A python package for causal inference.
 
 ## Recommendation, Advertisement & Ranking
 
@@ -733,11 +781,23 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Surprise](https://github.com/NicolasHug/Surprise) - A Python scikit for building and analyzing recommender systems.
 
+* [RecLearn](https://github.com/ZiyaoGeng/RecLearn) - Recommender Learning with Tensorflow2.x.
+
 * [Implicit](https://github.com/benfred/implicit) - Fast Python Collaborative Filtering for Implicit Feedback Datasets.
 
 * [LightFM](https://github.com/lyst/lightfm) - A Python implementation of LightFM, a hybrid recommendation algorithm.
 
 * [RecBole](https://github.com/RUCAIBox/RecBole) - A unified, comprehensive and efficient recommendation library for reproducing and developing recommendation algorithms.
+
+* [DeepCTR](https://github.com/shenweichen/DeepCTR) - Easy-to-use,Modular and Extendible package of deep-learning based CTR models.
+
+* [DeepCTR-Torch](https://github.com/shenweichen/DeepCTR-Torch) - Easy-to-use,Modular and Extendible package of deep-learning based CTR models.
+
+* [RecSys](https://github.com/mJackie/RecSys) - 计算广告/推荐系统/机器学习(Machine Learning)/点击率(CTR)/转化率(CVR)预估/点击率预估。
+
+* [AI-RecommenderSystem](https://github.com/zhongqiangwu960812/AI-RecommenderSystem) - 推荐系统领域的一些经典算法模型。
+
+* [Recommend-System-TF2.0](https://github.com/jc-LeeHub/Recommend-System-tf2.0) - 经典推荐算法的原理解析及代码实现。
 
 ## Time-Series & Financial
 
@@ -785,9 +845,15 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 ## Other Machine Learning Applications
 
+* [AlphaFold](https://github.com/deepmind/alphafold) - Open source code for AlphaFold.
+
+* [OpenFold](https://github.com/aqlaboratory/openfold) - Trainable, memory-efficient, and GPU-friendly PyTorch reproduction of AlphaFold 2.
+
 * [DeepChem](https://github.com/deepchem/deepchem) - Democratizing Deep-Learning for Drug Discovery, Quantum Chemistry, Materials Science and Biology.
 
 * [PennyLane](https://github.com/PennyLaneAI/pennylane) - A cross-platform Python library for differentiable programming of quantum computers.
+
+* [OR-Tools](https://github.com/google/or-tools) - Google's Operations Research tools.
 
 * [CARLA](https://github.com/carla-simulator/carla) **(not actively updated)** - An open-source simulator for autonomous driving research.
 
@@ -810,6 +876,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [NumExpr](https://github.com/pydata/numexpr) - Fast numerical array expression evaluator for Python, NumPy, PyTables, pandas, bcolz and more.
 
 * [Bottleneck](https://github.com/pydata/bottleneck) - Fast NumPy array functions written in C.
+
+* [Enoki](https://github.com/mitsuba-renderer/enoki) - Structured vectorization and differentiation on modern processor architectures.
 
 * [Mars](https://github.com/mars-project/mars) - A tensor-based unified framework for large-scale data computation which scales numpy, pandas, scikit-learn and many other libraries.
 
@@ -865,9 +933,13 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [ArviZ](https://github.com/arviz-devs/arviz) - A Python package for exploratory analysis of Bayesian models.
 
+* [POT](https://github.com/PythonOT/POT) - Python Optimal Transport.
+
 ### Others
 
 * [torchdiffeq](https://github.com/rtqichen/torchdiffeq) - Differentiable ordinary differential equation (ODE) solvers with full GPU support and O(1)-memory backpropagation.
+
+* [Neural ODEs](https://github.com/msurtsukov/neural-ode) - Jupyter notebook with Pytorch implementation of Neural Ordinary Differential Equations.
 
 ## Data Processing
 
@@ -964,6 +1036,12 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Faker](https://github.com/joke2k/faker) - A Python package that generates fake data for you.
 
 * [SDV](https://github.com/sdv-dev/SDV) - Synthetic Data Generation for tabular, relational and time series data.
+
+* [Googletrans](https://github.com/ssut/py-googletrans) - (unofficial) Googletrans: Free and Unlimited Google translate API for Python. Translates totally free of charge.
+
+* [OptBinning](https://github.com/guillermo-navas-palencia/optbinning) - Monotonic binning with constraints. Support batch & stream optimal binning. Scorecard modelling and counterfactual explanations.
+
+* [imgaug](https://github.com/aleju/imgaug) **(not actively updated)** - Image augmentation for machine learning experiments.
 
 * [Snorkel](https://github.com/snorkel-team/snorkel) **(not actively updated)** - A system for quickly generating training data with weak supervision.
 
@@ -1069,6 +1147,10 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Diagrams](https://github.com/mingrammer/diagrams) - Lets you draw the cloud system architecture in Python code.
 
+* [SandDance](https://github.com/microsoft/SandDance) - Visually explore, understand, and present your data.
+
+* [ML Visuals](https://github.com/dair-ai/ml-visuals) - Contains figures and templates which you can reuse and customize to improve your scientific writing.
+
 * [Scattertext](https://github.com/JasonKessler/scattertext) **(not actively updated)** - A tool for finding distinguishing terms in corpora and displaying them in an interactive HTML scatter plot.
 
 ## Machine Learning Tutorials
@@ -1076,6 +1158,81 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [PyTorch official tutorials](https://pytorch.org/tutorials/) - Official tutorials for PyTorch.
 
 * [labml.ai](https://nn.labml.ai/) - A collection of PyTorch implementations of neural networks and related algorithms, which are documented with explanations and rendered as side-by-side formatted notes.
+
+* [adv-financial-ml-marcos-exercises](https://github.com/fernandodelacalle/adv-financial-ml-marcos-exercises) - Exercises of the book: Advances in Financial Machine Learning by Marcos Lopez de Prado.
+
+# Computer Graphics
+
+## Graphic Libraries & Renderers
+
+* [NVIDIA Linux Open GPU Kernel Module Source](https://github.com/NVIDIA/open-gpu-kernel-modules) - NVIDIA Linux open GPU kernel module source.
+
+* [CUB](https://github.com/NVIDIA/cub) - Cooperative primitives for CUDA C++.
+
+* [Vulkan Guide](https://github.com/KhronosGroup/Vulkan-Guide) - One stop shop for getting started with the Vulkan API.
+
+* [VulkanTools](https://github.com/LunarG/VulkanTools) - Tools to aid in Vulkan development.
+
+* [glad](https://github.com/Dav1dde/glad) - Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.
+
+* [Shaderc](https://github.com/google/shaderc) - A collection of tools, libraries, and tests for Vulkan shader compilation.
+
+* [3D Game Shaders For Beginners](https://github.com/lettier/3d-game-shaders-for-beginners) - A step-by-step guide to implementing SSAO, depth of field, lighting, normal mapping, and more for your 3D game.
+
+* [Mitsuba 3](https://github.com/mitsuba-renderer/mitsuba3) - A Retargetable Forward and Inverse Renderer.
+
+* [Mitsuba 2](https://github.com/mitsuba-renderer/mitsuba2) **(no longer maintained)** - A Retargetable Forward and Inverse Renderer.
+
+## Game Engines
+
+* [Godot](https://github.com/godotengine/godot) - Multi-platform 2D and 3D game engine.
+* <details open><summary>Related projects:</summary>
+
+  * [Awesome Godot](https://github.com/godotengine/awesome-godot) - A curated list of free/libre plugins, scripts and add-ons for Godot
+  * [Godot demo projects](https://github.com/godotengine/godot-demo-projects) - Demonstration and Template Projects.
+  </details>
+
+* [raylib](https://github.com/raysan5/raylib) - A simple and easy-to-use library to enjoy videogames programming.
+
+* [O3DE](https://github.com/o3de/o3de) - An Apache 2.0-licensed multi-platform 3D engine that enables developers and content creators to build AAA games, cinema-quality 3D worlds, and high-fidelity simulations without any fees or commercial obligations.
+
+* [EnTT](https://github.com/skypjack/entt) - Gaming meets modern C++ - a fast and reliable entity component system (ECS) and much more.
+
+* [Halley](https://github.com/amzeratul/halley) - A lightweight game engine written in modern C++.
+
+* [Panda3D](https://github.com/panda3d/panda3d) - Powerful, mature open-source cross-platform game engine for Python and C++, developed by Disney and CMU.
+
+* [OpenXRay](https://github.com/OpenXRay/xray-16) - Improved version of the X-Ray Engine, the game engine used in the world-famous S.T.A.L.K.E.R. game series by GSC Game World.
+
+* [Spring](https://github.com/spring/spring) - A powerful free cross-platform RTS game engine.
+
+* [olcPixelGameEngine](https://github.com/OneLoneCoder/olcPixelGameEngine) - A tool used in [javidx9](https://github.com/OneLoneCoder/Javidx9)'s YouTube videos and projects.
+
+* [Acid](https://github.com/EQMG/Acid) - A high speed C++17 Vulkan game engine.
+
+* [Crown](https://github.com/crownengine/crown) - The flexible game engine.
+
+* [Corange](https://github.com/orangeduck/Corange) - Pure C Game Engine.
+
+* [KlayGE](https://github.com/gongminmin/KlayGE) - A cross-platform open source game engine with plugin-based architecture.
+
+* [nCine](https://github.com/nCine/nCine) - A cross-platform 2D game engine.
+
+* [Game-Programmer-Study-Notes](https://github.com/QianMo/Game-Programmer-Study-Notes) - 涉及游戏开发中的图形学、实时渲染、编程实践、GPU编程、设计模式、软件工程等内容。
+
+* [toy](https://github.com/hugoam/toy) **(not actively updated)** - The thin c++ game engine.
+
+* [GamePlay](https://github.com/gameplay3d/GamePlay) **(not actively updated)** - Open-source, cross-platform, C++ game engine for creating 2D/3D games.
+
+## CG Tutorials
+
+* [Vulkan Samples](https://github.com/KhronosGroup/Vulkan-Samples) - One stop solution for all Vulkan samples.
+
+* [Vulkan C++ examples and demos](https://github.com/SaschaWillems/Vulkan) - Examples and demos for the new Vulkan API.
+
+* [VulkanTutorial](https://github.com/Overv/VulkanTutorial) - Tutorial for the Vulkan graphics and compute API.
+
+* [Unity3DTraining](https://github.com/XINCGer/Unity3DTraining) - Unity的练习项目
 
 # Full-Stack Development
 
@@ -1115,9 +1272,17 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [pyinfra](https://github.com/Fizzadar/pyinfra) - Automates infrastructure super fast at massive scale. It can be used for ad-hoc command execution, service deployment, configuration management and more.
 
+* [Nightingale](https://github.com/ccfos/nightingale) - An enterprise-level cloud-native monitoring system, which can be used as drop-in replacement of Prometheus for alerting and Grafana for visualization.
+
+* [ZooKeeper](https://github.com/apache/zookeeper) - Apache ZooKeeper.
+
 * [whylogs](https://github.com/whylabs/whylogs) - The open standard for data logging.
 
+* [devops-exercises](https://github.com/bregman-arie/devops-exercises) - Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions.
+
 ## Desktop App Development
+
+* [Appsmith](https://github.com/appsmithorg/appsmith) - Low code project to build admin panels, internal tools, and dashboards. Integrates with 15+ databases and any API.
 
 ### Python Toolkit
 
@@ -1183,6 +1348,14 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 ## Web Development
 
+* [Hugo](https://github.com/gohugoio/hugo) - The world’s fastest framework for building websites.
+
+* [Hexo](https://github.com/hexojs/hexo) - A fast, simple & powerful blog framework, powered by Node.js.
+
+* [Jekyll](https://github.com/jekyll/jekyll) - A blog-aware static site generator in Ruby.
+
+* [Ghost](https://github.com/TryGhost/Ghost) - Turn your audience into a business. Publishing, memberships, subscriptions and newsletters.
+
 * [Mercury](https://github.com/mljar/mercury) - Convert Python notebook to web app and share with non-technical users.
 
 * [D3](https://github.com/d3/d3) - A JavaScript library for visualizing data using web standards.
@@ -1190,6 +1363,32 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Paramiko](https://github.com/paramiko/paramiko) - The leading native Python SSHv2 protocol library.
 
 * [Netmiko](https://github.com/ktbyers/netmiko) - Multi-vendor library to simplify Paramiko SSH connections to network devices.
+
+* [Storybook](https://github.com/storybookjs/storybook) - A frontend workshop for building UI components and pages in isolation. Made for UI development, testing, and documentation.
+
+* [Clone Wars](https://github.com/GorvGoyl/Clone-Wars) - 100+ open-source clones of popular sites like Airbnb, Amazon, Instagram, Netflix, Tiktok, Spotify, Whatsapp, Youtube etc. See source code, demo links, tech stack, github stars.
+
+* [50projects50days](https://github.com/bradtraversy/50projects50days) - 50+ mini web projects using HTML, CSS & JS.
+
+* [Public APIs](https://github.com/public-apis/public-apis) - A collective list of free APIs
+
+* [WebKit](https://github.com/WebKit/WebKit) - The browser engine used by Safari, Mail, App Store and many other applications on macOS, iOS and Linux.
+
+* [Open-IM-Server](https://github.com/OpenIMSDK/Open-IM-Server) - Open source Instant Messaging Server.
+
+* [progress-bar](https://github.com/fredericojordan/progress-bar) - Flask API for SVG progress badges.
+
+* [mall-swarm](https://github.com/macrozheng/mall-swarm) - 是一套微服务商城系统，采用了 Spring Cloud 2021 & Alibaba、Spring Boot 2.7、Oauth2、MyBatis、Docker、Elasticsearch、Kubernetes等核心技术，同时提供了基于Vue的管理后台方便快速搭建系统。mall-swarm在电商业务的基础集成了注册中心、配置中心、监控中心、网关等系统功能。文档齐全，附带全套Spring Cloud教程。
+
+* [heti](https://github.com/sivan/heti) - 赫蹏（hètí）是专为中文内容展示设计的排版样式增强。它基于通行的中文排版规范而来，可以为网站的读者带来更好的文章阅读体验。
+
+* [spring-boot-examples](https://github.com/ityouknow/spring-boot-examples) - Spring Boot 教程、技术栈示例代码，快速简单上手教程。
+
+* [SpringBoot-Learning](https://github.com/dyc87112/SpringBoot-Learning) - Spring Boot基础教程。
+
+* [big-react](https://github.com/BetaSu/big-react) - 从零实现 React v18 的核心功能。
+
+* [visual-drag-demo](https://github.com/woai3c/visual-drag-demo) - 一个低代码（可视化拖拽）教学项目。
 
 ## Process, Thread & Coroutine
 
@@ -1205,9 +1404,13 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [AnyIO](https://github.com/agronholm/anyio) - High level asynchronous concurrency and networking framework that works on top of either trio or asyncio.
 
-## Profiling & Tracing
+## Debugging & Profiling & Tracing
+
+* [x64dbg](https://github.com/x64dbg/x64dbg) - An open-source x64/x32 debugger for windows.
 
 * [ORBIT](https://github.com/google/orbit) - A standalone C/C++ profiler for Windows and Linux.
+
+* [BCC](https://github.com/iovisor/bcc) - Tools for BPF-based Linux IO analysis, networking, monitoring, and more.
 
 * [Tracy](https://github.com/wolfpld/tracy) - A real time, nanosecond resolution, remote telemetry, hybrid frame and sampling profiler for games and other applications.
 
@@ -1301,6 +1504,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Great Expectations](https://github.com/great-expectations/great_expectations) - Helps data teams eliminate pipeline debt, through data testing, documentation, and profiling.
 
 * [dbt](https://github.com/dbt-labs/dbt-core) - Enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.
+
+* [Metabase](https://github.com/metabase/metabase) - The simplest, fastest way to get business intelligence and analytics to everyone in your company.
 
 * [Ploomber](https://github.com/ploomber/ploomber) - The fastest way to build data pipelines.
 
@@ -1406,7 +1611,17 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [schema](https://github.com/keleshev/schema) **(not actively updated)** - A library for validating Python data structures.
 
+### For C++/C
+
+* [LAV Filters](https://github.com/Nevcairiel/LAVFilters) - Open-Source DirectShow Media Splitter and Decoders.
+
+* [spdlog](https://github.com/gabime/spdlog) - Fast C++ logging library.
+
 ## Security
+
+* [Vulhub](https://github.com/vulhub/vulhub) - Pre-Built Vulnerable Environments Based on Docker-Compose.
+
+* [hackingtool](https://github.com/Z4nzu/hackingtool) - ALL IN ONE Hacking Tool For Hackers.
 
 * [sqlmap](https://github.com/sqlmapproject/sqlmap) - Automatic SQL injection and database takeover tool.
 
@@ -1417,6 +1632,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [Bandit](https://github.com/PyCQA/bandit) - A tool designed to find common security issues in Python code.
 
 ## Package Management
+
+### For Python
 
 * [Conda](https://github.com/conda/conda) - OS-agnostic, system-level binary package manager and ecosystem.
 
@@ -1434,11 +1651,13 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [pipreqs](https://github.com/bndr/pipreqs) **(not actively updated)** - Generate pip requirements.txt file based on imports of any project.
 
-## Design Pattern & Programming Algorithm
+### For C++/C
+
+* [Vcpkg](https://github.com/microsoft/vcpkg) - C++ Library Manager for Windows, Linux, and MacOS.
+
+## Containers & Language Extentions & Linting
 
 ### For Python
-
-* [python-patterns](https://github.com/faif/python-patterns) - A collection of design patterns/idioms in Python.
 
 * [transitions](https://github.com/pytransitions/transitions) - A lightweight, object-oriented finite state machine implementation in Python with many extensions.
 
@@ -1508,29 +1727,115 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Pygments](https://github.com/pygments/pygments) - A generic syntax highlighter written in Python.
 
+### For C++/C
+
+* [Folly](https://github.com/facebook/folly) - An open-source C++ library developed and used at Facebook.
+
+* [gperftools](https://github.com/gperftools/gperftools) - a collection of a high-performance multi-threaded malloc() implementation, plus some pretty nifty performance analysis
+tools.
+
+* [libhv](https://github.com/ithewei/libhv) - A c/c++ network library for developing TCP/UDP/SSL/HTTP/WebSocket/MQTT client/server.
+
+### For Scala
+
+* [OS-Lib](https://github.com/com-lihaoyi/os-lib) - A simple, flexible, high-performance Scala interface to common OS filesystem and subprocess APIs.
+
 ## Programming Language Tutorials
+
+* [developer-roadmap](https://github.com/kamranahmedse/developer-roadmap) - Interactive roadmaps, guides and other educational content to help developers grow in their careers.
+
+* [Coding Interview University](https://github.com/jwasham/coding-interview-university) - A complete computer science study plan to become a software engineer.
+
+* [free-programming-books](https://github.com/EbookFoundation/free-programming-books) - Freely available programming books.
+
+* [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) - Master programming by recreating your favorite technologies from scratch.
+
+* [iHateRegex](https://github.com/geongeorge/i-hate-regex) - The code for iHateregex.io - The Regex Cheat Sheet
+
+* [The System Design Primer](https://github.com/donnemartin/system-design-primer) - Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.
+
+* [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer) - Interactive Online Platform that Visualizes Algorithms from Code
+
+* [fucking-algorithm](https://github.com/labuladong/fucking-algorithm) - labuladong 的算法小抄。
+
+* [rust-based-os-comp2022](https://github.com/LearningOS/rust-based-os-comp2022) - 2022开源操作系统训练营。
+
+* [technical-books](https://github.com/doocs/technical-books) - 国内外互联网技术大牛们都写了哪些书籍：计算机基础、网络、前端、后端、数据库、架构、大数据、深度学习。
+
+* [Learn-Git-in-30-days](https://github.com/doggy8088/Learn-Git-in-30-days) - 30 天精通 Git 版本控管
+
+### Python
+
+* [30 Days Of Python](https://github.com/Asabeneh/30-Days-Of-Python) - A step-by-step guide to learn the Python programming language in 30 days.
 
 * [numpy-100](https://github.com/rougier/numpy-100) - 100 numpy exercises (with solutions).
 
----
+* [python-patterns](https://github.com/faif/python-patterns) - A collection of design patterns/idioms in Python.
 
-# Academic
+### C++/C
 
-## Mathematics
+* [Modern C++ Tutorial](https://github.com/changkun/modern-cpp-tutorial) - Modern C++ Tutorial: C++11/14/17/20 On the Fly.
 
-## Paper Reading
+* [modern-cpp-features](https://github.com/AnthonyCalandra/modern-cpp-features) - A cheatsheet of modern C++ language and library features.
 
+* [design-patterns-cpp](https://github.com/JakubVojvoda/design-patterns-cpp) - C++ Design Patterns.
+
+* [CPlusPlusThings](https://github.com/Light-City/CPlusPlusThings) - 《C++ 那些事》。
+
+* [flash-linux0.11-talk](https://github.com/sunym1993/flash-linux0.11-talk) - 像小说一样品读 Linux 0.11 核心代码。
+
+### Go
+
+* [GoGuide](https://github.com/coderit666/GoGuide) - 一份涵盖大部分 Golang 程序员所需要掌握的核心知识，拥有 Go语言教程、Go开源书籍、Go语言入门教程、Go语言学习路线。
+
+### Java
+
+* [hello-algorithm](https://github.com/geekxh/hello-algorithm) - 针对小白的算法训练，包括四部分：大厂面经，力扣图解，千本开源电子书，百张技术思维导图。
+
+### Flutter
+
+* [FlutterExampleApps](https://github.com/iampawan/FlutterExampleApps) - Basic Flutter apps, for flutter devs.
+
+* [awesome-flutter](https://github.com/Solido/awesome-flutter) - An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.
 
 ---
 
 # Useful Tools
 
+* [Badges 4 README.md Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile) - Improve your README.md profile with these amazing badges.
+
+* [best-resume-ever](https://github.com/salomonelli/best-resume-ever) - Build fast and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
+
 ## MacOS
 
 * [Scroll-Reverser](https://github.com/pilotmoon/Scroll-Reverser) - Reverses the direction of macOS scrolling, with independent settings for trackpads and mice.
 
+* [iterm2-zmodem](https://github.com/aikuyun/iterm2-zmodem) - 在 Mac 下，实现与服务器进行便捷的文件上传和下载操作。
+
+## Windows
+
+* [Scoop](https://github.com/ScoopInstaller/Scoop) - A command-line installer for Windows.
+
+* [CleanMyWechat](https://github.com/blackboxo/CleanMyWechat) - 自动删除 PC 端微信缓存数据，包括从所有聊天中自动下载的大量文件、视频、图片等数据内容，解放你的空间。
+
+* [Watt Toolkit](https://github.com/BeyondDimension/SteamTools) - 一个开源跨平台的多功能 Steam 工具箱。
+
 ## Cross-Platform
+
+* [Glances](https://github.com/nicolargo/glances) - A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems.
 
 * [gpustat](https://github.com/wookayin/gpustat) - A simple command-line utility for querying and monitoring GPU status.
 
+* [fish](https://github.com/fish-shell/fish-shell) - The user-friendly command line shell.
+
 * [LANDrop](https://github.com/LANDrop/LANDrop) - A cross-platform tool that you can use to conveniently transfer photos, videos, and other types of files to other devices on the same local network.
+
+* [Notable](https://github.com/notable/notable) - The Markdown-based note-taking app that doesn't suck.
+
+* [Fusuma](https://github.com/hiroppy/fusuma) - Makes slides with Markdown easily.
+
+* [carbon](https://github.com/carbon-app/carbon) - Create and share beautiful images of your source code.
+
+* [GitHub520](https://github.com/521xueweihan/GitHub520) - 让你“爱”上 GitHub，解决访问时图裂、加载慢的问题。
+
+* [Kindle_download_helper](https://github.com/yihong0618/Kindle_download_helper) - Download all your kindle books script.
