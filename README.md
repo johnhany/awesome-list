@@ -133,6 +133,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     * [Glow](https://github.com/pytorch/glow) - Compiler for Neural Network hardware accelerators
     * [BoTorch](https://github.com/pytorch/botorch) - Bayesian optimization in PyTorch
     * [TNT](https://github.com/pytorch/tnt) - A library for PyTorch training tools and utilities
+    * [TorchArrow](https://github.com/pytorch/torcharrow) - Common and composable data structures built on PyTorch Tensor for efficient batch data representation and processing in PyTorch model authoring
     * [PyTorchVideo](https://github.com/facebookresearch/pytorchvideo) - A deep learning library for video understanding research, based on PyTorch
     * [tensorboardX](https://github.com/lanpa/tensorboardX) - Tensorboard for pytorch (and chainer, mxnet, numpy, ...)
     * [TorchMetrics](https://github.com/Lightning-AI/metrics) - Machine learning metrics for distributed, scalable PyTorch applications
@@ -212,6 +213,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
   * Supported platform: *Android, iOS, Linux and Windows*
 
 * [Neural Network Libraries](https://github.com/sony/nnabla) - An open source deep learning framework by Sony, with GPU support.
+
+* [OneFlow](https://github.com/Oneflow-Inc/oneflow) - A deep learning framework designed to be user-friendly, scalable and efficient.
 
 * [fastai](https://github.com/fastai/fastai) - A high-level deep learning library based on PyTorch.
 
@@ -697,6 +700,8 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 * [GAN Lab](https://github.com/poloclub/ganlab) - An Interactive, Visual Experimentation Tool for Generative Adversarial Networks.
 
 * [DeepFaceLab](https://github.com/iperov/DeepFaceLab) - DeepFaceLab is the leading software for creating deepfakes.
+
+* [DeOldify](https://github.com/jantic/DeOldify) - A Deep Learning based project for colorizing and restoring old images (and video!)
 
 * [waifu2x](https://github.com/nagadomi/waifu2x) - Image Super-Resolution for Anime-Style Art.
 
