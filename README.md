@@ -133,6 +133,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
     * [Glow](https://github.com/pytorch/glow) - Compiler for Neural Network hardware accelerators
     * [BoTorch](https://github.com/pytorch/botorch) - Bayesian optimization in PyTorch
     * [TNT](https://github.com/pytorch/tnt) - A library for PyTorch training tools and utilities
+    * [PyTorchVideo](https://github.com/facebookresearch/pytorchvideo) - A deep learning library for video understanding research, based on PyTorch
     * [tensorboardX](https://github.com/lanpa/tensorboardX) - Tensorboard for pytorch (and chainer, mxnet, numpy, ...)
     * [TorchMetrics](https://github.com/Lightning-AI/metrics) - Machine learning metrics for distributed, scalable PyTorch applications
     * [Apex](https://github.com/NVIDIA/apex) - Tools for easy mixed precision and distributed training in Pytorch
@@ -613,8 +614,6 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [Norfair](https://github.com/tryolabs/norfair) - Lightweight Python library for adding real-time multi-object tracking to any detector.
 
-* [PyTorchVideo](https://github.com/facebookresearch/pytorchvideo) - A deep learning library for video understanding research, based on PyTorch.
-
 * [AlexeyAB/darknet](https://github.com/AlexeyAB/darknet) - YOLOv4 / Scaled-YOLOv4 / YOLO - Neural Networks for Object Detection (Windows and Linux version of Darknet ).
 
 * [pjreddie/darknet](https://github.com/pjreddie/darknet) - Convolutional Neural Networks.
@@ -753,7 +752,7 @@ A list of useful stuff in Machine Learning, Computer Graphics, Software Developm
 
 * [FudanNLP](https://github.com/FudanNLP/fnlp) **(no longer maintained)** - Toolkit for Chinese natural language processing.
 
-* [fastNLP](https://github.com/fastnlp/fastNLP) **(successor of face_classification)** - A Modularized and Extensible NLP Framework for PyTorch and PaddleNLP.
+* [fastNLP](https://github.com/fastnlp/fastNLP) **(successor of FudanNLP)** - A Modularized and Extensible NLP Framework for PyTorch and PaddleNLP.
 
 * [Rubrix](https://github.com/recognai/rubrix) - A production-ready Python framework for exploring, annotating, and managing data in NLP projects.
 
