@@ -2639,11 +2639,13 @@ fragmentation avoidance and scalable concurrency support.
 
 ## Windows
 
+* [winget](https://github.com/microsoft/winget-cli) - Windows Package Manager Client.
+
+* [Scoop](https://github.com/ScoopInstaller/Scoop) - A command-line installer for Windows.
+
 * [Windows Terminal](https://github.com/microsoft/terminal) - The new Windows Terminal and the original Windows console host, all in the same place!
 
 * [Windows Calculator](https://github.com/microsoft/calculator) - A simple yet powerful calculator that ships with Windows.
-
-* [Scoop](https://github.com/ScoopInstaller/Scoop) - A command-line installer for Windows.
 
 * [WoeUSB](https://github.com/WoeUSB/WoeUSB) - A Microsoft Windows USB installation media preparer for GNU+Linux.
 
@@ -2697,11 +2699,15 @@ fragmentation avoidance and scalable concurrency support.
 
 * [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) - A delightful community-driven (with 2,000+ contributors) framework for managing your zsh configuration.
 
+* [oh-my-posh](https://github.com/jandedobbeleer/oh-my-posh) - A prompt theme engine for any shell.
+
 * [PowerShell](https://github.com/PowerShell/PowerShell) - PowerShell for every system!
 
 * [fish](https://github.com/fish-shell/fish-shell) - The user-friendly command line shell.
 
 * [The Fuck](https://github.com/nvbn/thefuck) - Magnificent app which corrects your previous console command.
+
+* [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) - Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more.
 
 * [LANDrop](https://github.com/LANDrop/LANDrop) - A cross-platform tool that you can use to conveniently transfer photos, videos, and other types of files to other devices on the same local network.
 
